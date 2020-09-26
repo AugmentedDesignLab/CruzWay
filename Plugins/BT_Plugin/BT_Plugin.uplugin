@@ -1,0 +1,23 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "BT_Plugin",
+	"Description": "behavior tree plugin",
+	"Category": "BT",
+	"CreatedBy": "jawadefaj",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "BT_Plugin",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	]
+}
