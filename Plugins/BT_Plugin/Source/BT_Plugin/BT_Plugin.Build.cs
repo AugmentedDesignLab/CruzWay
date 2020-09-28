@@ -25,9 +25,11 @@ public class BT_Plugin : ModuleRules
 		PublicDependencyModuleNames.AddRange(
 			new string[]
 			{
-				"Core", "CoreUObject", "Engine", "InputCore", "PhysXVehicles", "AIModule", "GameplayTasks"
+				"Core", "CoreUObject", "Engine", "InputCore", "PhysXVehicles", "AIModule", "GameplayTasks",
 
 				// ... add other public dependencies that you statically link with here ...
+				//ADL Plugin
+				"ParseXML"
 			}
 			);
 			
