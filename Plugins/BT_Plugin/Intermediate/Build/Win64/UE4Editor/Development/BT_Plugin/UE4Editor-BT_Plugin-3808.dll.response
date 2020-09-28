@@ -72,9 +72,9 @@
 "C:\Program Files\Epic Games\UE_4.22\Engine\Plugins\Runtime\PhysXVehicles\Intermediate\Build\Win64\UE4Editor\Development\PhysXVehicles\UE4Editor-PhysXVehicles.lib"
 "C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Development\AIModule\UE4Editor-AIModule.lib"
 "C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Development\GameplayTasks\UE4Editor-GameplayTasks.lib"
-"C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\ParseXML\Intermediate\Build\Win64\UE4Editor\Development\ParseXML\UE4Editor-ParseXML.lib"
-/OUT:"C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Binaries\Win64\UE4Editor-BT_Plugin.dll"
-/IMPLIB:"C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\UE4Editor-BT_Plugin.suppressed.lib"
-/PDB:"C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Binaries\Win64\UE4Editor-BT_Plugin.pdb"
+"C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\ParseXML\Intermediate\Build\Win64\UE4Editor\Development\ParseXML\UE4Editor-ParseXML-0002.lib"
+/OUT:"C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Binaries\Win64\UE4Editor-BT_Plugin-3808.dll"
+/IMPLIB:"C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\UE4Editor-BT_Plugin-3808.suppressed.lib"
+/PDB:"C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Binaries\Win64\UE4Editor-BT_Plugin-3808.pdb"
 /ignore:4078
 /INCLUDE:IMPLEMENT_MODULE_BT_Plugin

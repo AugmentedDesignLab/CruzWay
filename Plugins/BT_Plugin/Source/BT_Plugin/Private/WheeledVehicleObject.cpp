@@ -10,16 +10,16 @@
 AWheeledVehicleObject::AWheeledVehicleObject()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	//PrintLog("Inside vehicle object constructor ");
+	PrintLog("Inside vehicle object constructor ");
 }
 
 void AWheeledVehicleObject::BeginPlay()
 {
 	Super::BeginPlay();
-	//PrintLog("Inside vehicle object beginplay");
-	VehicleController = GetController<AVehicleController>();
-	InitializeWheeledVehicle(BehaviorTreePath, WayPoint);
-	InitializeBlackBoardValues();
+	PrintLog("Inside vehicle object beginplay");
+	//VehicleController = GetController<AVehicleController>();
+	//InitializeWheeledVehicle(BehaviorTreePath, WayPoint);
+	//InitializeBlackBoardValues();
 }
 
 void AWheeledVehicleObject::Tick(float DeltaTime)
@@ -27,8 +27,8 @@ void AWheeledVehicleObject::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	//PrintLog("Inside vehicle object tick");
 
-	UpdateBlackBoard(DeltaTime);
-	UpdateControlValue();
+	//UpdateBlackBoard(DeltaTime);
+	//UpdateControlValue();
 }
 
 void AWheeledVehicleObject::UpdateControlValue()

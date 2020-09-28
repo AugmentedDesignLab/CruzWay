@@ -10,8 +10,8 @@ AVehicleController::AVehicleController()
 	PrintLog("Inside controller constructor");
 
 	//Creating subobject 
-	BehaviorTreeComponent = CreateDefaultSubobject<UBehaviorTreeComponent>("VehicleBehaviorTree");
-	BlackboardComponent = CreateDefaultSubobject<UBlackboardComponent>("VehicleBlackBoard");
+	//BehaviorTreeComponent = CreateDefaultSubobject<UBehaviorTreeComponent>("VehicleBehaviorTree");
+	//BlackboardComponent = CreateDefaultSubobject<UBlackboardComponent>("VehicleBlackBoard");
 }
 
 void AVehicleController::BeginPlay()
