@@ -54,6 +54,7 @@ public:
 	int32 twoTimesTotalConnectedSplines = 0; //multiple of 2
 	void calculateCurrentSplineTurnTypes();
 	FString calculateDecalSelection();
+	float GetDistanceAlongSpline(FVector WorldLocation);
 };
 
 

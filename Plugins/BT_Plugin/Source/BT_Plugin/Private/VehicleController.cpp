@@ -7,17 +7,17 @@
 AVehicleController::AVehicleController()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	PrintLog("Inside controller constructor");
+	//PrintLog("Inside controller constructor");
 
 	//Creating subobject 
-	//BehaviorTreeComponent = CreateDefaultSubobject<UBehaviorTreeComponent>("VehicleBehaviorTree");
-	//BlackboardComponent = CreateDefaultSubobject<UBlackboardComponent>("VehicleBlackBoard");
+	BehaviorTreeComponent = CreateDefaultSubobject<UBehaviorTreeComponent>("VehicleBehaviorTree");
+	BlackboardComponent = CreateDefaultSubobject<UBlackboardComponent>("VehicleBlackBoard");
 }
 
 void AVehicleController::BeginPlay()
 {
 	Super::BeginPlay();
-	PrintLog("Inside controller beginplay");
+	//PrintLog("Inside controller beginplay");
 }
 
 void AVehicleController::Tick(float DeltaTime)
