@@ -32,7 +32,11 @@ EBTNodeResult::Type UTaskLaneFollow::ExecuteTask(UBehaviorTreeComponent& OwnerCo
 
 float UTaskLaneFollow::UpdatedSteeringValue(AVehicleController* VehicleController)
 {
+<<<<<<< HEAD
 	PrintLog("Steering Update");
+=======
+	//PrintLog("Steering Update");
+>>>>>>> 0d6d4b0b3af738df836c1edfc40bce6d5c613cde
 	float SteerValue = 0.0;
 	AWayPoint* WayPoint = VehicleController->WayPoint;
 	FVector VehicleLocation = VehicleController->BlackboardComponent->GetValueAsVector("VehicleWorldLocation");
@@ -42,16 +46,26 @@ float UTaskLaneFollow::UpdatedSteeringValue(AVehicleController* VehicleControlle
 
 	FVector VehicleVelocity = VehicleController->BlackboardComponent->GetValueAsVector("VehicleVelocity");
 	//FVector VehicleNextLocation = VehicleLocation + VehicleVelocity * LOOK_AHEAD;
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 0d6d4b0b3af738df836c1edfc40bce6d5c613cde
 	if ((WayPoint->TotalDistance - DistanceAlongWayPoint) < SPLINE_CHANGE_THRESHOLD)
 	{
 		PrintLog("Changing Spline");
 		AWayPoint* ConnectedWayPoint = WayPoint->ConnectedSpline[0];
 		VehicleController->SetWayPoint(ConnectedWayPoint);
 	}
+<<<<<<< HEAD
 
 	FVector NearestSplinePoint = WayPoint->SplineComponent->FindLocationClosestToWorldLocation(VehicleLocation, ESplineCoordinateSpace::World);
 	FVector NextSplinePoint = WayPoint->SplineComponent->GetLocationAtDistanceAlongSpline(DistanceAlongWayPoint + VehicleVelocity.Size() * LOOK_AHEAD, ESplineCoordinateSpace::World);
+=======
+	
+	FVector NearestSplinePoint = WayPoint->SplineComponent->FindLocationClosestToWorldLocation(VehicleLocation, ESplineCoordinateSpace::World);
+	FVector NextSplinePoint = WayPoint->SplineComponent->GetLocationAtDistanceAlongSpline(DistanceAlongWayPoint + VehicleVelocity.Size() * LOOK_AHEAD , ESplineCoordinateSpace::World);
+>>>>>>> 0d6d4b0b3af738df836c1edfc40bce6d5c613cde
 
 	FVector VehicleFrontVector = VehicleVelocity.GetSafeNormal();
 	FVector DirectionVectorNextSplinePoint = NextSplinePoint - VehicleLocation;
@@ -73,7 +87,11 @@ float UTaskLaneFollow::UpdatedSteeringValue(AVehicleController* VehicleControlle
 	{
 		SteerValue = UKismetMathLibrary::MapRangeClamped(Rad_Deg, 0, 90, 0, -1);
 	}
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 0d6d4b0b3af738df836c1edfc40bce6d5c613cde
 	return SteerValue;
 }
 
@@ -88,13 +106,21 @@ float UTaskLaneFollow::UpdatedThrottleValue(AVehicleController* VehicleControlle
 
 	FVector VehicleVelocity = VehicleController->BlackboardComponent->GetValueAsVector("VehicleVelocity");
 
+<<<<<<< HEAD
 	if (((VehicleVelocity.Size() * 36 / 1000) > DesiredVelocity) || VelocityStatus == -1)
+=======
+	if (((VehicleVelocity.Size() * 36 / 1000) > DesiredVelocity) || VelocityStatus  == -1)
+>>>>>>> 0d6d4b0b3af738df836c1edfc40bce6d5c613cde
 	{
 		if (ThrottleValue > THROTTLE_DOWN_LIMIT)
 		{
 			ThrottleValue = ThrottleValue - THROTTLE_DEC_RATE;
 		}
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> 0d6d4b0b3af738df836c1edfc40bce6d5c613cde
 	}
 	else if (VelocityStatus == 1)
 	{
@@ -102,7 +128,11 @@ float UTaskLaneFollow::UpdatedThrottleValue(AVehicleController* VehicleControlle
 		{
 			ThrottleValue = ThrottleValue + THROTTLE_INC_RATE;
 		}
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> 0d6d4b0b3af738df836c1edfc40bce6d5c613cde
 	}
 	return ThrottleValue;
 }

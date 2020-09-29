@@ -4,7 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "Engine.h"
+<<<<<<< HEAD
 #include <ParseXML/Public/WayPoint.h>
+=======
+#include "WayPoint.h"
+>>>>>>> 0d6d4b0b3af738df836c1edfc40bce6d5c613cde
 #include "VehicleController.h"
 #include "WheeledVehicle.h"
 #include "WheeledVehicleObject.generated.h"
