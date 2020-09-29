@@ -16,11 +16,7 @@ AWheeledVehicleObject::AWheeledVehicleObject()
 void AWheeledVehicleObject::BeginPlay()
 {
 	Super::BeginPlay();
-<<<<<<< HEAD
 	PrintLog("Inside vehicle object beginplay");
-=======
-	//PrintLog("Inside vehicle object beginplay");
->>>>>>> 0d6d4b0b3af738df836c1edfc40bce6d5c613cde
 	VehicleController = GetController<AVehicleController>();
 	InitializeWheeledVehicle(BehaviorTreePath, WayPoint);
 	InitializeBlackBoardValues();

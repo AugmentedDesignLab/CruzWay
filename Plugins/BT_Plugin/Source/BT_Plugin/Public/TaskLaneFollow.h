@@ -5,20 +5,12 @@
 #include "CoreMinimal.h"
 #include "BehaviorTree/Tasks/BTTask_BlackboardBase.h"
 #include "Engine.h"
-<<<<<<< HEAD
 #include <ParseXML/Public/WayPoint.h>
-=======
-#include "WayPoint.h"
->>>>>>> 0d6d4b0b3af738df836c1edfc40bce6d5c613cde
 #include "VehicleController.h"
 #include "TaskLaneFollow.generated.h"
 
 /**
-<<<<<<< HEAD
  *
-=======
- * 
->>>>>>> 0d6d4b0b3af738df836c1edfc40bce6d5c613cde
  */
 UCLASS()
 class BT_PLUGIN_API UTaskLaneFollow : public UBTTask_BlackboardBase
