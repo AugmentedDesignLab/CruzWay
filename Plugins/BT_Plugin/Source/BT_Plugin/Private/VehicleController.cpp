@@ -7,9 +7,9 @@
 AVehicleController::AVehicleController()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	PrintLog("Inside controller constructor");
+	//PrintLog("Inside controller constructor");
 
-	//Creating subobject 
+	//Creating subobject
 	BehaviorTreeComponent = CreateDefaultSubobject<UBehaviorTreeComponent>("VehicleBehaviorTree");
 	BlackboardComponent = CreateDefaultSubobject<UBlackboardComponent>("VehicleBlackBoard");
 }
@@ -17,21 +17,21 @@ AVehicleController::AVehicleController()
 void AVehicleController::BeginPlay()
 {
 	Super::BeginPlay();
-	PrintLog("Inside controller beginplay");
+	//PrintLog("Inside controller beginplay");
 }
 
 void AVehicleController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	//PrintLog("Inside  tick ");
-	
+
 }
 
 UBehaviorTree* AVehicleController::LoadBehaviorTree(FString BehaviorTreePath)
 {
 	UBehaviorTree* BehaviorTreeAsset = LoadObjFromPath<UBehaviorTree>(FName(*BehaviorTreePath));
 	if (BehaviorTreeAsset != NULL)
-	{ 
+	{
 		PrintLog(" asset name ");
 		return BehaviorTreeAsset;
 	}
@@ -72,7 +72,7 @@ bool AVehicleController::SetWayPoint(AWayPoint* WP)
 				PrintLog("BlackBoard ");
 				BlackboardComponent->SetValueAsBool("IsStopSignAhead", true);
 			}
-			
+
 		}
 		else
 		{
@@ -103,12 +103,3 @@ bool AVehicleController::InitializeVehicleController(FString BehaviorTreePath, A
 	}
 	return false;
 }
-
-
-
-
-
-
-
-
-

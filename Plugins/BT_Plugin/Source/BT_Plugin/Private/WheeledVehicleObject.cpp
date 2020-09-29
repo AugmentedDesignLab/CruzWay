@@ -16,7 +16,7 @@ AWheeledVehicleObject::AWheeledVehicleObject()
 void AWheeledVehicleObject::BeginPlay()
 {
 	Super::BeginPlay();
-	//PrintLog("Inside vehicle object beginplay");
+	PrintLog("Inside vehicle object beginplay");
 	VehicleController = GetController<AVehicleController>();
 	InitializeWheeledVehicle(BehaviorTreePath, WayPoint);
 	InitializeBlackBoardValues();
@@ -60,7 +60,7 @@ bool AWheeledVehicleObject::InitializeWheeledVehicle(FString BehaviorTreePath, A
 		VehicleController->InitializeVehicleController(BehaviorTreePath, WayPoint);
 		return true;
 	}
-	
+
 	return false;
 }
 
@@ -73,7 +73,7 @@ void AWheeledVehicleObject::ApplyControlValue(float Throttle, float Steering, fl
 
 void AWheeledVehicleObject::InitializeBlackBoardValues()
 {
-	
+
 	if (VehicleController != NULL)
 	{
 		PrintLog("Inside Initialize Black Board ");
@@ -85,5 +85,3 @@ void AWheeledVehicleObject::InitializeBlackBoardValues()
 		//VehicleController->BlackboardComponent->SetValueAsBool("IsStopSignAhead", true);
 	}
 }
-
-

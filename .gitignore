@@ -16,6 +16,7 @@ Content/trial_trafficLight
 Content/VehicleModel
 Content/*.uasset
 Content/*.umap
+Content/VehicleVarietyPack
 
 
 #Plugin specific files
