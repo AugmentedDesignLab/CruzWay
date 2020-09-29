@@ -21,9 +21,13 @@
 		}
 	],
 	"Plugins": [
-		{
-			"Name": "ParseXML",
-			"Enabled": true
-		}
+    {
+      "Name": "ParseXML",
+      "Enabled": true
+    },
+    {
+      "Name": "PhysXVehicles",
+      "Enabled": true
+    }
 	]
 }
