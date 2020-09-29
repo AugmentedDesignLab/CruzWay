@@ -4,13 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "Engine.h"
-#include "WayPoint.h"
+#include <ParseXML/Public/WayPoint.h>
 #include "VehicleController.h"
 #include "WheeledVehicle.h"
 #include "WheeledVehicleObject.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class BT_PLUGIN_API AWheeledVehicleObject : public AWheeledVehicle
@@ -24,7 +24,7 @@ private:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	
+
 public:
 
 	virtual void Tick(float DeltaTime) override;

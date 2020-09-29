@@ -1,0 +1,3 @@
+C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Definitions.BT_Plugin.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h

@@ -46,9 +46,15 @@ public:
 	int SpeedLimit = 0;
 	UPROPERTY(EditAnywhere)
 	bool isStopSignConnected = false;
+
+	//New Code
+	UPROPERTY(EditAnywhere)
+	FVector StopSignLocation = FVector::ZeroVector;
+
 	int32 twoTimesTotalConnectedSplines = 0; //multiple of 2
 	void calculateCurrentSplineTurnTypes();
 	FString calculateDecalSelection();
+	float GetDistanceAlongSpline(FVector WorldLocation);
 };
 
 
