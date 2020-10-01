@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.25807.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{538B80FE-5AF8-4F82-B044-A098B0AF4248}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{ECC73FFA-DA25-4C0F-96C2-C314C8EB466F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{32F4C774-55D8-4702-90CE-BADFF5FC5126}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{2EE3AD25-F819-4E5D-8D2C-BD7F50C7F838}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UE4", "Intermediate\ProjectFiles\UE4.vcxproj", "{4046DE95-4C28-43D2-9EB9-BE6D0C151F2C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SumoToUnreal", "Intermediate\ProjectFiles\SumoToUnreal.vcxproj", "{3CC3D987-276C-485F-AE7C-32BC43ABA611}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers", "{141DB895-A1CF-4A1B-9626-5D602EE6537A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers", "{18E7603E-CDA9-4697-B11B-EB7C634C2BF6}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\..\..\..\Program Files\Epic Games\UE_4.23\Engine\Extras\VisualStudioDebugging\UE4.natvis = ..\..\..\..\..\..\Program Files\Epic Games\UE_4.23\Engine\Extras\VisualStudioDebugging\UE4.natvis
 	EndProjectSection
@@ -81,15 +81,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-<<<<<<< HEAD
-		{4046DE95-4C28-43D2-9EB9-BE6D0C151F2C} = {538B80FE-5AF8-4F82-B044-A098B0AF4248}
-		{3CC3D987-276C-485F-AE7C-32BC43ABA611} = {32F4C774-55D8-4702-90CE-BADFF5FC5126}
-=======
-		{4046DE95-4C28-43D2-9EB9-BE6D0C151F2C} = {466A94A6-1593-4A60-BFB3-8ED07415E1F3}
-		{3CC3D987-276C-485F-AE7C-32BC43ABA611} = {14258765-5F88-4246-ADDE-FB27DB39E31C}
-	EndGlobalSection
-	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A3D61BAB-5A51-4089-8734-7FB0372E5638}
->>>>>>> BehaviorTree-Plugin
+		{4046DE95-4C28-43D2-9EB9-BE6D0C151F2C} = {ECC73FFA-DA25-4C0F-96C2-C314C8EB466F}
+		{3CC3D987-276C-485F-AE7C-32BC43ABA611} = {2EE3AD25-F819-4E5D-8D2C-BD7F50C7F838}
 	EndGlobalSection
 EndGlobal

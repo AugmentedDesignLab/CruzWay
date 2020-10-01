@@ -39,6 +39,7 @@ void AlaneMarking::spawnActor()
 	FRotator decalRotation = directionVector.Rotation();
 	decalRotation.Yaw += 90.0f;
 	ADecalActor* decalActor = this->GetWorld()->SpawnActor<ADecalActor>(Spawnlocation, decalRotation, SpawnParameters);
+	decalActor->SetActorScale3D(FVector(0.01f, 1.0f, 1.0f));
 	decalComponent = decalActor->GetDecal();
 	decalComponent->DecalSize = FVector(128.0f, 278.0908813f, 188.199707f);
 	if (currentDecalSelection.Equals(TEXT("left"))) decalComponent->SetDecalMaterial(decalMaterialMap["left"]);
@@ -53,6 +54,7 @@ void AlaneMarking::spawnPedestrianCrossingDecal()
 	FActorSpawnParameters SpawnParameters;
 	FRotator decalRotation = directionVector.Rotation();
 	ADecalActor* decalActor = this->GetWorld()->SpawnActor<ADecalActor>(Spawnlocation, decalRotation, SpawnParameters);
+	decalActor->SetActorScale3D(FVector(0.01f, 1.0f, 1.0f));
 	decalComponent = decalActor->GetDecal();
 	decalComponent->DecalSize = FVector(128.0f, 172.5901642f, 487.2773743f);
 	decalComponent->SetDecalMaterial(decalMaterialMap["pedestrianCrosswalk"]);
