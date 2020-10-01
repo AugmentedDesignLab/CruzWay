@@ -3,25 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.25807.0
 MinimumVisualStudioVersion = 10.0.40219.1
-<<<<<<< HEAD
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{7C767C32-7FAB-46F4-ADDB-E90CC283BA16}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{538B80FE-5AF8-4F82-B044-A098B0AF4248}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{B9225C4E-4D1E-4247-BE5E-E4D7C4E23DB1}"
-=======
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{466A94A6-1593-4A60-BFB3-8ED07415E1F3}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{14258765-5F88-4246-ADDE-FB27DB39E31C}"
->>>>>>> BTlocal
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Games", "Games", "{32F4C774-55D8-4702-90CE-BADFF5FC5126}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UE4", "Intermediate\ProjectFiles\UE4.vcxproj", "{4046DE95-4C28-43D2-9EB9-BE6D0C151F2C}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SumoToUnreal", "Intermediate\ProjectFiles\SumoToUnreal.vcxproj", "{3CC3D987-276C-485F-AE7C-32BC43ABA611}"
 EndProject
-<<<<<<< HEAD
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers", "{CD5439B2-F826-46ED-9B8D-5EE0F61CD16A}"
-=======
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers", "{237B4322-EDA1-4D56-9951-AF1511E33296}"
->>>>>>> BTlocal
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Visualizers", "Visualizers", "{141DB895-A1CF-4A1B-9626-5D602EE6537A}"
 	ProjectSection(SolutionItems) = preProject
 		..\..\..\..\..\..\Program Files\Epic Games\UE_4.23\Engine\Extras\VisualStudioDebugging\UE4.natvis = ..\..\..\..\..\..\Program Files\Epic Games\UE_4.23\Engine\Extras\VisualStudioDebugging\UE4.natvis
 	EndProjectSection
@@ -91,12 +81,7 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-<<<<<<< HEAD
-		{4046DE95-4C28-43D2-9EB9-BE6D0C151F2C} = {7C767C32-7FAB-46F4-ADDB-E90CC283BA16}
-		{3CC3D987-276C-485F-AE7C-32BC43ABA611} = {B9225C4E-4D1E-4247-BE5E-E4D7C4E23DB1}
-=======
-		{F10D878E-A204-4DA5-AF3E-366149A8749B} = {466A94A6-1593-4A60-BFB3-8ED07415E1F3}
-		{F7162A75-EA61-4F01-9CA0-242584C4DC8E} = {14258765-5F88-4246-ADDE-FB27DB39E31C}
->>>>>>> BTlocal
+		{4046DE95-4C28-43D2-9EB9-BE6D0C151F2C} = {538B80FE-5AF8-4F82-B044-A098B0AF4248}
+		{3CC3D987-276C-485F-AE7C-32BC43ABA611} = {32F4C774-55D8-4702-90CE-BADFF5FC5126}
 	EndGlobalSection
 EndGlobal

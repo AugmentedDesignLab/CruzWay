@@ -33,11 +33,8 @@ EBTNodeResult::Type UTaskLaneFollow::ExecuteTask(UBehaviorTreeComponent& OwnerCo
 
 float UTaskLaneFollow::UpdatedSteeringValue(AVehicleController* VehicleController)
 {
-<<<<<<< HEAD
 	PrintLog("Steering Update");
-=======
 	//PrintLog("Steering Update");
->>>>>>> 85875bc8c2e5f41e5a1c8bec78c5d75dbbf7a32c
 	float SteerValue = 0.0;
 	AWayPoint* WayPoint = VehicleController->WayPoint;
 	FVector VehicleLocation = VehicleController->BlackboardComponent->GetValueAsVector("VehicleWorldLocation");
