@@ -7,9 +7,15 @@
 /IGNORE:4221
 /NODEFAULTLIB
 "C:\Users\abjawad\Documents\GitHub\CruzWay\Intermediate\Build\Win64\SumoToUnrealEditor\Development\UnrealEd\SharedPCH.UnrealEd.h.obj"
+"C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\TaskLaneFollow.cpp.obj"
+"C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\TaskStartFromStopSign.cpp.obj"
+"C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\TaskStopAtStopSign.cpp.obj"
 "C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\VehicleController.cpp.obj"
 "C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\WheeledVehicleObject.cpp.obj"
 "C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Module.BT_Plugin.cpp.obj"
+"C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\BT_Plugin.init.gen.cpp.obj"
+"C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\TaskStartFromStopSign.gen.cpp.obj"
+"C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\TaskStopAtStopSign.gen.cpp.obj"
 "C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Module.BT_Plugin.gen.cpp.obj"
 "C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Default.rc2.res"
 /OUT:"C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\UE4Editor-BT_Plugin-0008.lib"

@@ -19,9 +19,12 @@ AScenarioGenerator::AScenarioGenerator()
 void AScenarioGenerator::BeginPlay()
 {
 	Super::BeginPlay();
+	for (FVehicleSpecification Vehicle : VehicleList)
+	{
+		AWheeledVehicleObject* temp = SpawnVehicle(Vehicle);
+		SpawnedVehicleList.Add(temp);
+	}
 	
-	AWheeledVehicleObject* temp = SpawnVehicle(VehicleList[0]);
-	SpawnedVehicleList.Add(temp);
 	
 	
 }
@@ -30,11 +33,7 @@ void AScenarioGenerator::BeginPlay()
 void AScenarioGenerator::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	for (AWheeledVehicleObject* VehicleObject : SpawnedVehicleList)
-	{
-		//VehicleObject->UpdateBlackBoard(DeltaTime);
-		//VehicleObject->UpdateControlValue();
-	}
+	
 }
 
 AWheeledVehicleObject* AScenarioGenerator::LoadVehicleFromPluginAsset(FString Path)

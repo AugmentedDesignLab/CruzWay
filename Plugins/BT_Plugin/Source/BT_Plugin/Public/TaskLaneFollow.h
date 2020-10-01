@@ -21,7 +21,9 @@ class BT_PLUGIN_API UTaskLaneFollow : public UBTTask_BlackboardBase
 	float UpdatedSteeringValue(AVehicleController* VehicleController);
 	float UpdatedThrottleValue(AVehicleController* VehicleController);
 
-
+	AWayPoint* GetRandomWayPointFromConnectedSpline(AWayPoint* GivenWayPoint);
+	void ChangeWayPointUpdateBlackBoard(AWayPoint* WayPoint, AVehicleController* VehicleController);
+	
 	void PrintLog(FString Text)
 	{
 		if (!GEngine) return;

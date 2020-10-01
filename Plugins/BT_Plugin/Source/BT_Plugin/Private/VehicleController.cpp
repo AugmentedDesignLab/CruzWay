@@ -59,26 +59,7 @@ bool AVehicleController::SetWayPoint(AWayPoint* WP)
 	PrintLog("Setting Waypoint ");
 	if (WP != NULL)
 	{
-		PrintLog("WayPoint Not NULL ");
 		WayPoint = WP;
-		if (WP->StopSignLocation != FVector::ZeroVector)
-		{
-			PrintLog("Not zero vector" + WP->StopSignLocation.ToString());
-			if (BlackboardComponent == NULL)
-			{
-				PrintLog("Null Blackboard");
-			}
-			else
-			{
-				PrintLog("BlackBoard ");
-				BlackboardComponent->SetValueAsBool("IsStopSignAhead", true);
-			}
-			
-		}
-		else
-		{
-			BlackboardComponent->SetValueAsBool("IsStopSignAhead", false);
-		}
 		return true;
 	}
 	else

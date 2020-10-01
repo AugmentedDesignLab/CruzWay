@@ -67,7 +67,7 @@ bool AWheeledVehicleObject::InitializeWheeledVehicle(FString Path, AWayPoint* WP
 	}
 	else
 	{
-		PrintLog("Vehicle Controller reallllly NULL");
+		PrintLog("Vehicle Controller NULL");
 		return false;
 	}
 }
@@ -87,10 +87,10 @@ void AWheeledVehicleObject::InitializeBlackBoardValues()
 		PrintLog("Inside Initialize Black Board ");
 		VehicleController->BlackboardComponent->SetValueAsObject("WheeledVehicleMovementComponent", this->GetVehicleMovement());
 		VehicleController->BlackboardComponent->SetValueAsObject("WayPoint", this->WayPoint);
+		VehicleController->BlackboardComponent->SetValueAsBool("IsStopSignAhead", this->WayPoint->isStopSignConnected);
 		VehicleController->BlackboardComponent->SetValueAsVector("VehicleWorldLocation", this->GetActorLocation());
 		VehicleController->BlackboardComponent->SetValueAsFloat("DesiredVelocity", this->WayPoint->SpeedLimit);
 		VehicleController->BlackboardComponent->SetValueAsInt("VelocityStatus", 1);
-		//VehicleController->BlackboardComponent->SetValueAsBool("IsStopSignAhead", true);
 	}
 }
 

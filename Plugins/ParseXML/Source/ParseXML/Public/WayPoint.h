@@ -49,7 +49,7 @@ public:
 
 	//New Code
 	UPROPERTY(EditAnywhere)
-	FVector StopSignLocation = FVector::ZeroVector;
+	FVector StopSignLocation;
 
 	int32 twoTimesTotalConnectedSplines = 0; //multiple of 2
 	void calculateCurrentSplineTurnTypes();
