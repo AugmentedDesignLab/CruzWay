@@ -50,6 +50,7 @@ void EmptyLinkFunctionForGeneratedCodeWheeledVehicleObject() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AWheeledVehicleObject_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n * \n */" },
 		{ "HideCategories", "Navigation" },
 		{ "IncludePath", "WheeledVehicleObject.h" },
 		{ "ModuleRelativePath", "Public/WheeledVehicleObject.h" },
@@ -100,7 +101,7 @@ void EmptyLinkFunctionForGeneratedCodeWheeledVehicleObject() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AWheeledVehicleObject, 4284283935);
+	IMPLEMENT_CLASS(AWheeledVehicleObject, 3608205918);
 	template<> BT_PLUGIN_API UClass* StaticClass<AWheeledVehicleObject>()
 	{
 		return AWheeledVehicleObject::StaticClass();

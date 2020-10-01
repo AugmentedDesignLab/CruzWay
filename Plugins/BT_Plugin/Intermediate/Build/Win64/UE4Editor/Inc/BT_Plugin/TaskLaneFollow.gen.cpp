@@ -40,6 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeTaskLaneFollow() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTaskLaneFollow_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n *\n */" },
 		{ "IncludePath", "TaskLaneFollow.h" },
 		{ "ModuleRelativePath", "Public/TaskLaneFollow.h" },
 	};
@@ -71,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeTaskLaneFollow() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UTaskLaneFollow, 3678826352);
+	IMPLEMENT_CLASS(UTaskLaneFollow, 4143650627);
 	template<> BT_PLUGIN_API UClass* StaticClass<UTaskLaneFollow>()
 	{
 		return UTaskLaneFollow::StaticClass();

@@ -40,6 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeTaskStopAtStopSign() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UTaskStopAtStopSign_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n * \n */" },
 		{ "IncludePath", "TaskStopAtStopSign.h" },
 		{ "ModuleRelativePath", "Public/TaskStopAtStopSign.h" },
 	};
@@ -71,7 +72,7 @@ void EmptyLinkFunctionForGeneratedCodeTaskStopAtStopSign() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UTaskStopAtStopSign, 1218600979);
+	IMPLEMENT_CLASS(UTaskStopAtStopSign, 3762867173);
 	template<> BT_PLUGIN_API UClass* StaticClass<UTaskStopAtStopSign>()
 	{
 		return UTaskStopAtStopSign::StaticClass();

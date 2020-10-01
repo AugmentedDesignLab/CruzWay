@@ -20,10 +20,14 @@
 			"LoadingPhase": "Default"
 		}
 	],
-	"Plugins": [
-		{
-			"Name": "ParseXML",
-			"Enabled": true
-		}
-	]
+  "Plugins": [
+    {
+      "Name": "ParseXML",
+      "Enabled": true
+    },
+    {
+      "Name": "PhysXVehicles",
+      "Enabled": true
+    }
+  ]
 }

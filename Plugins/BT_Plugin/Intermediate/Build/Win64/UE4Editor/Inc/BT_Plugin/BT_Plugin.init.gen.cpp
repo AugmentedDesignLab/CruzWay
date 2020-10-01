@@ -21,7 +21,7 @@ void EmptyLinkFunctionForGeneratedCodeBT_Plugin_init() {}
 				nullptr,
 				0,
 				PKG_CompiledIn | 0x00000040,
-				0xC1087044,
+				0x6B1757BC,
 				0xAA90C71D,
 				METADATA_PARAMS(nullptr, 0)
 			};

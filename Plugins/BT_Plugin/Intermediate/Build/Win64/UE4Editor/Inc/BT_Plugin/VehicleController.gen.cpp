@@ -40,6 +40,7 @@ void EmptyLinkFunctionForGeneratedCodeVehicleController() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AVehicleController_Statics::Class_MetaDataParams[] = {
+		{ "Comment", "/**\n * \n */" },
 		{ "HideCategories", "Collision Rendering Utilities|Transformation" },
 		{ "IncludePath", "VehicleController.h" },
 		{ "ModuleRelativePath", "Public/VehicleController.h" },
@@ -72,7 +73,7 @@ void EmptyLinkFunctionForGeneratedCodeVehicleController() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AVehicleController, 2471980866);
+	IMPLEMENT_CLASS(AVehicleController, 582094120);
 	template<> BT_PLUGIN_API UClass* StaticClass<AVehicleController>()
 	{
 		return AVehicleController::StaticClass();

@@ -1,7 +1,7 @@
 {
-	"BuildId": "5660361",
+	"BuildId": "8386587",
 	"Modules": 
 	{
-		"BT_Plugin": "UE4Editor-BT_Plugin-0012.dll"
+		"BT_Plugin": "UE4Editor-BT_Plugin.dll"
 	}
 }
