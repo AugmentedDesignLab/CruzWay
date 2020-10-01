@@ -20,7 +20,11 @@
 			"LoadingPhase": "Default"
 		}
 	],
+<<<<<<< HEAD
 	"Plugins": [
+=======
+  "Plugins": [
+>>>>>>> BehaviorTree-Plugin
     {
       "Name": "ParseXML",
       "Enabled": true
@@ -29,5 +33,10 @@
       "Name": "PhysXVehicles",
       "Enabled": true
     }
+<<<<<<< HEAD
 	]
 }
+=======
+  ]
+}
+>>>>>>> BehaviorTree-Plugin
