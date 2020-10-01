@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "BehaviorTree/Tasks/BTTask_BlackboardBase.h"
+#include "Engine.h"
 #include "TaskStartFromStopSign.generated.h"
 
 /**
@@ -16,4 +17,9 @@ class BT_PLUGIN_API UTaskStartFromStopSign : public UBTTask_BlackboardBase
 	
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 
+	void PrintLog(FString Text)
+	{
+		if (!GEngine) return;
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, *Text);
+	}
 };

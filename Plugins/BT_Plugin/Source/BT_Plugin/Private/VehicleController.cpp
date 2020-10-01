@@ -32,7 +32,7 @@ UBehaviorTree* AVehicleController::LoadBehaviorTree(FString BehaviorTreePath)
 	UBehaviorTree* BehaviorTreeAsset = LoadObjFromPath<UBehaviorTree>(FName(*BehaviorTreePath));
 	if (BehaviorTreeAsset != NULL)
 	{
-		PrintLog(" asset name ");
+		//PrintLog(" asset name ");
 		return BehaviorTreeAsset;
 	}
 	else return nullptr;
@@ -48,7 +48,7 @@ bool AVehicleController::InitializeBlackBoard(UBehaviorTree* BehaviorTree)
 		BlackboardComponent->SetValueAsFloat("ThrottleValue", 0.5);
 		//BlackboardComponent->SetValueAsFloat("ThreshWaypointDeviation", 10.0);
 		//BlackboardComponent->SetValueAsFloat("ThreshStopAtStopSignDistance", 800);
-		PrintLog("Behavior tree and blackboard init");
+		//PrintLog("Behavior tree and blackboard init");
 		return true;
 	}
 	return false;
@@ -60,6 +60,7 @@ bool AVehicleController::SetWayPoint(AWayPoint* WP)
 	if (WP != NULL)
 	{
 		WayPoint = WP;
+<<<<<<< HEAD
 		if (WP->StopSignLocation != FVector::ZeroVector)
 		{
 			PrintLog("Not zero vector" + WP->StopSignLocation.ToString());
@@ -78,9 +79,16 @@ bool AVehicleController::SetWayPoint(AWayPoint* WP)
 		{
 			BlackboardComponent->SetValueAsBool("IsStopSignAhead", false);
 		}
+=======
+>>>>>>> 85875bc8c2e5f41e5a1c8bec78c5d75dbbf7a32c
 		return true;
 	}
-	return false;
+	else
+	{
+		PrintLog("Waypoint NULL");
+		return false;
+	}
+
 }
 
 void AVehicleController::StartBehaviorTree(UBehaviorTree* BehaviorTree)
@@ -93,13 +101,18 @@ void AVehicleController::StartBehaviorTree(UBehaviorTree* BehaviorTree)
 bool AVehicleController::InitializeVehicleController(FString BehaviorTreePath, AWayPoint* WP)
 {
 	UBehaviorTree* BehaviorTree = LoadBehaviorTree(BehaviorTreePath);
+	//PrintLog("Initialize vehicle controller +++++++++++++");
 	bool IsSetWayPoint = SetWayPoint(WP);
-	PrintLog("Initialize vehicle controller");
+	//PrintLog("Initialize vehicle controller ++++++++");
+
 	if (BehaviorTree != NULL && IsSetWayPoint)
 	{
+		PrintLog("Initialize Blackboard nad starting BT");
 		InitializeBlackBoard(BehaviorTree);
 		StartBehaviorTree(BehaviorTree);
 		return true;
 	}
+
 	return false;
+
 }

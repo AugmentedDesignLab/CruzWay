@@ -2,6 +2,7 @@
 
 
 #include "WheeledVehicleObject.h"
+#include "GameFramework/Pawn.h"
 #include "WheeledVehicleMovementComponent.h"
 
 
@@ -18,8 +19,8 @@ void AWheeledVehicleObject::BeginPlay()
 	Super::BeginPlay();
 	PrintLog("Inside vehicle object beginplay");
 	VehicleController = GetController<AVehicleController>();
-	InitializeWheeledVehicle(BehaviorTreePath, WayPoint);
-	InitializeBlackBoardValues();
+	//InitializeWheeledVehicle(BehaviorTreePath, WayPoint);
+	//InitializeBlackBoardValues();
 }
 
 void AWheeledVehicleObject::Tick(float DeltaTime)
@@ -52,16 +53,23 @@ bool AWheeledVehicleObject::SelfDestroy()
 	return true;
 }
 
-bool AWheeledVehicleObject::InitializeWheeledVehicle(FString BehaviorTreePath, AWayPoint* WayPoint)
+bool AWheeledVehicleObject::InitializeWheeledVehicle(FString Path, AWayPoint* WP)
 {
-	//PrintLog("Initialize Wheeled Vehicle ");
+
+	PrintLog("Initialize Wheeled Vehicle ");
+	BehaviorTreePath = Path;
+	WayPoint = WP;
 	if (VehicleController != NULL)
 	{
+		PrintLog("Vehicle Controller not NULL");
 		VehicleController->InitializeVehicleController(BehaviorTreePath, WayPoint);
 		return true;
 	}
-
-	return false;
+	else
+	{
+		PrintLog("Vehicle Controller NULL");
+		return false;
+	}
 }
 
 void AWheeledVehicleObject::ApplyControlValue(float Throttle, float Steering, float Brake)
@@ -79,9 +87,9 @@ void AWheeledVehicleObject::InitializeBlackBoardValues()
 		PrintLog("Inside Initialize Black Board ");
 		VehicleController->BlackboardComponent->SetValueAsObject("WheeledVehicleMovementComponent", this->GetVehicleMovement());
 		VehicleController->BlackboardComponent->SetValueAsObject("WayPoint", this->WayPoint);
+		VehicleController->BlackboardComponent->SetValueAsBool("IsStopSignAhead", this->WayPoint->isStopSignConnected);
 		VehicleController->BlackboardComponent->SetValueAsVector("VehicleWorldLocation", this->GetActorLocation());
 		VehicleController->BlackboardComponent->SetValueAsFloat("DesiredVelocity", this->WayPoint->SpeedLimit);
 		VehicleController->BlackboardComponent->SetValueAsInt("VelocityStatus", 1);
-		//VehicleController->BlackboardComponent->SetValueAsBool("IsStopSignAhead", true);
 	}
 }
