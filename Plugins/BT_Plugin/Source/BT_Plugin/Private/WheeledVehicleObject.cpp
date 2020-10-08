@@ -53,6 +53,29 @@ bool AWheeledVehicleObject::SelfDestroy()
 	return true;
 }
 
+FRotator AWheeledVehicleObject::CalculateRotation()
+{
+	if (WayPoint != NULL)
+	{
+		FVector Start = FVector(1, 0, 0);
+		FVector End = WayPoint->SplineComponent->GetDirectionAtDistanceAlongSpline(WayPoint->SplineComponent->GetSplineLength() * 0.5f, ESplineCoordinateSpace::World);
+		float Angle = acos(FVector::DotProduct(Start, End)) * 180 / 3.14159;
+		float Del = Start.X * End.Y - End.X * Start.Y;
+		if (Del < 0)
+		{
+			Angle = 360 - Angle;
+		}
+		return FRotator(0, Angle, 0);
+	}
+	else
+	{
+		PrintLog("Waypoint Null");
+		return FRotator::ZeroRotator;
+	}
+}
+
+
+
 bool AWheeledVehicleObject::InitializeWheeledVehicle(FString Path, AWayPoint* WP)
 {
 	
@@ -63,6 +86,7 @@ bool AWheeledVehicleObject::InitializeWheeledVehicle(FString Path, AWayPoint* WP
 	{
 		PrintLog("Vehicle Controller not NULL");
 		VehicleController->InitializeVehicleController(BehaviorTreePath, WayPoint);
+		this->SetActorRotation(CalculateRotation(), ETeleportType::TeleportPhysics);
 		return true;
 	}
 	else

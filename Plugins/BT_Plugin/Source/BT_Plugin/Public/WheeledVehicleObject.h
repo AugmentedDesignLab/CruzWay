@@ -42,6 +42,8 @@ public:
 
 	bool SelfDestroy();
 
+	FRotator CalculateRotation();
+
 	bool InitializeWheeledVehicle(FString BehaviorTreePath, AWayPoint* WayPoint);
 
 	void ApplyControlValue(float Throttle, float Steering, float Brake);

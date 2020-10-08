@@ -1,7 +1,8 @@
 C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Definitions.BT_Plugin.h
-C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin\TaskLaneFollow.gen.cpp
+C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin\BT_Plugin.init.gen.cpp
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin\TaskLaneFollow.gen.cpp
 C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Source\BT_Plugin/Public/TaskLaneFollow.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/Tasks/BTTask_BlackboardBase.h
 C:\Program Files\Epic Games\UE_4.22\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTTaskNode.h
@@ -836,6 +837,12 @@ C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.22\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BlackboardComponent.generated.h
 C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin\VehicleController.generated.h
 C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin\TaskLaneFollow.generated.h
+C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin\TaskStartFromStopSign.gen.cpp
+C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Source\BT_Plugin/Public/TaskStartFromStopSign.h
+C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin\TaskStartFromStopSign.generated.h
+C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin\TaskStopAtStopSign.gen.cpp
+C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Source\BT_Plugin/Public/TaskStopAtStopSign.h
+C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin\TaskStopAtStopSign.generated.h
 C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin\VehicleController.gen.cpp
 C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin\WheeledVehicleObject.gen.cpp
 C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Source\BT_Plugin/Public/WheeledVehicleObject.h
