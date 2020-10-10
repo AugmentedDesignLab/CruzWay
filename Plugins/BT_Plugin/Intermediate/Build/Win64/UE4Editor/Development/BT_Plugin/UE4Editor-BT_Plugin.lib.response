@@ -6,9 +6,9 @@
 /NAME:"UE4Editor-BT_Plugin.dll"
 /IGNORE:4221
 /NODEFAULTLIB
-"C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Intermediate\Build\Win64\SumoToUnrealEditor\Development\UnrealEd\SharedPCH.UnrealEd.h.obj"
-"C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Module.BT_Plugin.cpp.obj"
-"C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Module.BT_Plugin.gen.cpp.obj"
-"C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Default.rc2.res"
-/OUT:"C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\UE4Editor-BT_Plugin.lib"
+"C:\Users\xuyan\Documents\GitHub\CruzWay\Intermediate\Build\Win64\SumoToUnrealEditor\Development\UnrealEd\SharedPCH.UnrealEd.h.obj"
+"C:\Users\xuyan\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Module.BT_Plugin.cpp.obj"
+"C:\Users\xuyan\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Module.BT_Plugin.gen.cpp.obj"
+"C:\Users\xuyan\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Default.rc2.res"
+/OUT:"C:\Users\xuyan\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\UE4Editor-BT_Plugin.lib"
 /INCLUDE:IMPLEMENT_MODULE_BT_Plugin

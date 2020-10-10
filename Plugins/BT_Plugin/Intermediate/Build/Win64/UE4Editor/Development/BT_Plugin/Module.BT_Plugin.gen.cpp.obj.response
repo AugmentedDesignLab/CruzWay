@@ -28,7 +28,7 @@
 /wd4838
 /we4668
 /I .
-/I "C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Source\BT_Plugin\Private"
+/I C:\Users\xuyan\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Source\BT_Plugin\Private
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\CoreUObject
 /I Runtime
 /I Runtime\CoreUObject\Public
@@ -499,10 +499,10 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I Runtime\ClothingSystemRuntimeInterface
-/I "C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin"
-/I "C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Source"
-/I "C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Source\BT_Plugin\Public"
-/I "C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Source\BT_Plugin"
+/I C:\Users\xuyan\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin
+/I C:\Users\xuyan\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Source
+/I C:\Users\xuyan\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Source\BT_Plugin\Public
+/I C:\Users\xuyan\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Source\BT_Plugin
 /I ..\Plugins\Runtime\PhysXVehicles\Intermediate\Build\Win64\UE4Editor\Inc\PhysXVehicles
 /I ..\Plugins\Runtime\PhysXVehicles\Source
 /I ..\Plugins\Runtime\PhysXVehicles\Source\PhysXVehicles\Public
@@ -515,11 +515,11 @@
 /I Runtime\AnimGraphRuntime\Public\BoneControllers
 /I Runtime\AnimGraphRuntime\Public\RBF
 /I ..\Plugins\Runtime\PhysXVehicles\Source\ThirdParty
-/I "C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\ParseXML\Intermediate\Build\Win64\UE4Editor\Inc\ParseXML"
-/I "C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\ParseXML\Source"
-/I "C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\ParseXML\Source\ParseXML\Public"
-/I "C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\ParseXML\Source\ParseXML"
-/I "C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\ParseXML\Source\ParseXML\Public\earcut"
+/I C:\Users\xuyan\Documents\GitHub\CruzWay\Plugins\ParseXML\Intermediate\Build\Win64\UE4Editor\Inc\ParseXML
+/I C:\Users\xuyan\Documents\GitHub\CruzWay\Plugins\ParseXML\Source
+/I C:\Users\xuyan\Documents\GitHub\CruzWay\Plugins\ParseXML\Source\ParseXML\Public
+/I C:\Users\xuyan\Documents\GitHub\CruzWay\Plugins\ParseXML\Source\ParseXML
+/I C:\Users\xuyan\Documents\GitHub\CruzWay\Plugins\ParseXML\Source\ParseXML\Public\earcut
 /I Runtime\XmlParser\Public
 /I Runtime\XmlParser
 /I ..\Plugins\Runtime\ProceduralMeshComponent\Intermediate\Build\Win64\UE4Editor\Inc\ProceduralMeshComponent
@@ -549,18 +549,17 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
-/I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE"
-/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\ucrt"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\shared"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\um"
-/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.17763.0\winrt"
-/FI"C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Intermediate\Build\Win64\SumoToUnrealEditor\Development\UnrealEd\SharedPCH.UnrealEd.h"
-/Yu"C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Intermediate\Build\Win64\SumoToUnrealEditor\Development\UnrealEd\SharedPCH.UnrealEd.h"
-/Fp"C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Intermediate\Build\Win64\SumoToUnrealEditor\Development\UnrealEd\SharedPCH.UnrealEd.h.pch"
-"C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Module.BT_Plugin.gen.cpp"
-/FI"C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Definitions.BT_Plugin.h"
-/Fo"C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Module.BT_Plugin.gen.cpp.obj"
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\INCLUDE"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
+/I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
+/FI"C:\Users\xuyan\Documents\GitHub\CruzWay\Intermediate\Build\Win64\SumoToUnrealEditor\Development\UnrealEd\SharedPCH.UnrealEd.h"
+/Yu"C:\Users\xuyan\Documents\GitHub\CruzWay\Intermediate\Build\Win64\SumoToUnrealEditor\Development\UnrealEd\SharedPCH.UnrealEd.h"
+/Fp"C:\Users\xuyan\Documents\GitHub\CruzWay\Intermediate\Build\Win64\SumoToUnrealEditor\Development\UnrealEd\SharedPCH.UnrealEd.h.pch"
+"C:\Users\xuyan\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Module.BT_Plugin.gen.cpp"
+/FI"C:\Users\xuyan\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Definitions.BT_Plugin.h"
+/Fo"C:\Users\xuyan\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Module.BT_Plugin.gen.cpp.obj"
 /TP
 /GR-
 /W4
