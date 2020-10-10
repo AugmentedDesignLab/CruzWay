@@ -58,7 +58,6 @@ AWheeledVehicleObject* AScenarioGenerator::SpawnVehicle(FVehicleSpecification Ve
 	AWheeledVehicleObject* temp = World->SpawnActor<AWheeledVehicleObject>(VehicleSpec.VehicleAsset, SpawnPoint, Rotator, SpawnParam);
 	temp->InitializeWheeledVehicle(VehicleSpec.BT_Path, VehicleSpec.WayPoint);
 	temp->InitializeBlackBoardValues();
-
 	return temp;
 }
 

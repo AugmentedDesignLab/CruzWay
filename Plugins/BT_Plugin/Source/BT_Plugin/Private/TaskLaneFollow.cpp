@@ -7,12 +7,12 @@
 #include "WheeledVehicleMovementComponent.h"
 #include "Kismet/KismetMathLibrary.h"
 
-#define LOOK_AHEAD_MUL 1
-#define LOOK_AHEAD_AD 100
-#define SPLINE_CHANGE_THRESHOLD 10
+#define LOOK_AHEAD_MUL 1.5
+#define LOOK_AHEAD_AD 500
+#define SPLINE_CHANGE_THRESHOLD 100
 #define THROTTLE_INC_RATE 0.007
 #define THROTTLE_DEC_RATE 0.007
-#define THROTTLE_UP_LIMIT 0.6
+#define THROTTLE_UP_LIMIT 0.5
 #define THROTTLE_DOWN_LIMIT 0.0
 #define ANGLE_WEIGHT 1.0
 
@@ -40,7 +40,6 @@ float UTaskLaneFollow::UpdatedSteeringValue(AVehicleController* VehicleControlle
 	float FrameDelta = VehicleController->BlackboardComponent->GetValueAsFloat("TimeDelta");
 	float DistanceAlongWayPoint = WayPoint->GetDistanceAlongSpline(VehicleLocation);
 	//PrintLog("Distance along spline " + FString::SanitizeFloat(DistanceAlongWayPoint) + " TotalDistance " + FString::SanitizeFloat(WayPoint->TotalDistance));
-
 	FVector VehicleVelocity = VehicleController->BlackboardComponent->GetValueAsVector("VehicleVelocity");
 	//FVector VehicleNextLocation = VehicleLocation + VehicleVelocity * LOOK_AHEAD;
 
@@ -81,13 +80,21 @@ float UTaskLaneFollow::UpdatedSteeringValue(AVehicleController* VehicleControlle
 void UTaskLaneFollow::ChangeWayPointUpdateBlackBoard(AWayPoint* WayPoint, AVehicleController* VehicleController)
 {
 	AWayPoint* GetRandomFromConnectedWayPoint = GetRandomWayPointFromConnectedSpline(WayPoint);
-	VehicleController->SetWayPoint(GetRandomFromConnectedWayPoint);
-	VehicleController->BlackboardComponent->SetValueAsFloat("DesiredVelocity", GetRandomFromConnectedWayPoint->SpeedLimit);
-	VehicleController->BlackboardComponent->SetValueAsObject("WayPoint", GetRandomFromConnectedWayPoint);
-	if (GetRandomFromConnectedWayPoint->isStopSignConnected)
+	if (GetRandomFromConnectedWayPoint == NULL)
 	{
-		VehicleController->BlackboardComponent->SetValueAsBool("IsStopSignAhead", true);
-		VehicleController->BlackboardComponent->SetValueAsVector("StopSignLocation", GetRandomFromConnectedWayPoint->StopSignLocation);
+		VehicleController->ReInitialize = true;
+	}
+	else
+	{
+
+		VehicleController->SetWayPoint(GetRandomFromConnectedWayPoint);
+		VehicleController->BlackboardComponent->SetValueAsFloat("DesiredVelocity", GetRandomFromConnectedWayPoint->SpeedLimit);
+		VehicleController->BlackboardComponent->SetValueAsObject("WayPoint", GetRandomFromConnectedWayPoint);
+		if (GetRandomFromConnectedWayPoint->isStopSignConnected)
+		{
+			VehicleController->BlackboardComponent->SetValueAsBool("IsStopSignAhead", true);
+			VehicleController->BlackboardComponent->SetValueAsVector("StopSignLocation", GetRandomFromConnectedWayPoint->StopSignLocation);
+		}
 	}
 }
 
@@ -124,6 +131,10 @@ float UTaskLaneFollow::UpdatedThrottleValue(AVehicleController* VehicleControlle
 AWayPoint* UTaskLaneFollow::GetRandomWayPointFromConnectedSpline(AWayPoint* GivenWayPoint)
 {
 	int NumberOfConnectedWayPoint = GivenWayPoint->ConnectedSpline.Num();
+	if (NumberOfConnectedWayPoint == 0)
+	{
+		return NULL;
+	}
 	int RandomNumber = FMath::RandRange(0, NumberOfConnectedWayPoint - 1);
 	return GivenWayPoint->ConnectedSpline[RandomNumber];
 }

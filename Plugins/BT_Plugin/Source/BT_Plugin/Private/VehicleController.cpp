@@ -80,9 +80,7 @@ void AVehicleController::StartBehaviorTree(UBehaviorTree* BehaviorTree)
 bool AVehicleController::InitializeVehicleController(FString BehaviorTreePath, AWayPoint* WP)
 {
 	UBehaviorTree* BehaviorTree = LoadBehaviorTree(BehaviorTreePath);
-	//PrintLog("Initialize vehicle controller +++++++++++++");
 	bool IsSetWayPoint = SetWayPoint(WP);
-	//PrintLog("Initialize vehicle controller ++++++++");
 	
 	if (BehaviorTree != NULL && IsSetWayPoint)
 	{
@@ -95,6 +93,11 @@ bool AVehicleController::InitializeVehicleController(FString BehaviorTreePath, A
 	return false;
 	
 }
+
+
+
+
+
 
 
 

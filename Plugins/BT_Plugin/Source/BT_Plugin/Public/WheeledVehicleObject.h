@@ -46,6 +46,10 @@ public:
 
 	bool InitializeWheeledVehicle(FString BehaviorTreePath, AWayPoint* WayPoint);
 
+	bool ReInitializeWheeledVehicle();
+
+	TArray<AActor*> FindAllWaypoint();
+
 	void ApplyControlValue(float Throttle, float Steering, float Brake);
 
 	void InitializeBlackBoardValues();

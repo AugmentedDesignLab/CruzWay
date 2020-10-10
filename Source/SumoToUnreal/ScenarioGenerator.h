@@ -47,7 +47,7 @@ public:
 
 	TArray<AWheeledVehicleObject*> SpawnedVehicleList;
 
-	AWheeledVehicleObject* LoadVehicleFromPluginAsset(FString Path = "BehaviorTree'/BT_Plugin/BT/BehaviorTree.BehaviorTree'");
+	AWheeledVehicleObject* LoadVehicleFromPluginAsset(FString Path);
 
 	AWheeledVehicleObject* SpawnVehicle(FVehicleSpecification VehicleSpec);
 

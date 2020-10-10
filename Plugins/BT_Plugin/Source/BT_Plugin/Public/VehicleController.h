@@ -30,13 +30,13 @@ public:
 	UBlackboardComponent* BlackboardComponent;
 	UBehaviorTreeComponent* BehaviorTreeComponent;
 	AWayPoint* WayPoint;
+	bool ReInitialize = false;
 
 	UBehaviorTree* LoadBehaviorTree(FString BehaviorTreePath);
 	bool InitializeBlackBoard(UBehaviorTree* BehaviorTree);
 	bool SetWayPoint(AWayPoint* WP);
 	void StartBehaviorTree(UBehaviorTree* BehaviorTree);
 	bool InitializeVehicleController(FString BehaviorTreePath, AWayPoint* WP);
-
 
 	void PrintLog(FString Text)
 	{

@@ -3,4 +3,3 @@
 #include "C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Source\BT_Plugin\Private\BT_PluginEdMode.cpp"
 #include "C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Source\BT_Plugin\Private\BT_PluginEdModeToolkit.cpp"
 #include "C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Source\BT_Plugin\Private\TaskStartFromStopSign.cpp"
-#include "C:\Users\abjawad\Documents\GitHub\CruzWay\Plugins\BT_Plugin\Source\BT_Plugin\Private\VehicleController.cpp"

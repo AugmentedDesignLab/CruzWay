@@ -27,9 +27,22 @@ void AWheeledVehicleObject::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	//PrintLog("Inside vehicle object tick");
-
-	UpdateBlackBoard(DeltaTime);
-	UpdateControlValue();
+	if (VehicleController->ReInitialize == true)
+	{
+		PrintLog("Reinitialize ");
+		ReInitializeWheeledVehicle();
+		VehicleController->ReInitialize = false;
+		//this->SelfDestroy();
+	}
+	else
+	{
+		UpdateBlackBoard(DeltaTime);
+		UpdateControlValue();
+	}
+	if (GetActorLocation().Z > 100)
+	{
+		this->SelfDestroy();
+	}
 }
 
 void AWheeledVehicleObject::UpdateControlValue()
@@ -94,6 +107,70 @@ bool AWheeledVehicleObject::InitializeWheeledVehicle(FString Path, AWayPoint* WP
 		PrintLog("Vehicle Controller NULL");
 		return false;
 	}
+}
+
+bool AWheeledVehicleObject::ReInitializeWheeledVehicle()
+{
+	TArray<AActor*> AllWayPointActor = FindAllWaypoint();
+	TArray<AWayPoint*> WayPoints;
+	TArray<AWayPoint*> WaypointStraight;
+	AWayPoint* NearestWayPoint = NULL;
+	for (int i = 0; i < AllWayPointActor.Num(); i++)
+	{
+		WayPoints.Add(static_cast<AWayPoint*>(AllWayPointActor[i]));
+	}
+	AWayPoint* CurWayPoint = Cast<AWayPoint>(VehicleController->BlackboardComponent->GetValueAsObject("WayPoint"));
+	FVector CurWayPointLocation = CurWayPoint->GetActorLocation();
+	float Distance = 10000.0;
+	for (int i = 0; i < WayPoints.Num(); i++)
+	{
+		if (WayPoints[i]->turnType == "straight" && WayPoints[i]->TotalDistance > 3000)
+		{
+			//PrintLog("Straight road" + WayPoints[i]->directionOfSpline.ToString());
+			FVector WayPointLocation = WayPoints[i]->GetActorLocation();
+			float TempDistance = FVector::Distance(CurWayPointLocation, WayPointLocation);
+			//PrintLog("temp Distance " + FString::SanitizeFloat(TempDistance));
+			if (TempDistance < Distance && TempDistance > 350)
+			{
+				NearestWayPoint = WayPoints[i];
+				Distance = TempDistance;
+			}
+			WaypointStraight.Add(WayPoints[i]);
+		}
+	}
+	if (NearestWayPoint != NULL)
+	{
+		PrintLog("inside neartest way point " + NearestWayPoint->GetName());
+		PrintLog("Vehicle Location " + this->GetActorLocation().ToString());
+		PrintLog("Vehicle Rotation " + this->GetActorRotation().ToString());
+		
+		//this->GetVehicleMovementComponent()->StopMovementImmediately();
+		//VehicleController->BehaviorTreeComponent->PauseLogic("");
+		
+		FVector ReLocation = NearestWayPoint->SplineComponent->GetLocationAtDistanceAlongSpline(0, ESplineCoordinateSpace::World);
+		//ReLocation = FVector(ReLocation.X, ReLocation.Y, 40.0);
+
+		GetVehicleMovementComponent()->StopMovementImmediately();
+		WayPoint = NearestWayPoint;
+		VehicleController->SetWayPoint(NearestWayPoint);
+		this->SetActorLocationAndRotation(ReLocation, CalculateRotation(), false, 0, ETeleportType::TeleportPhysics);
+		VehicleController->BlackboardComponent->SetValueAsObject("WayPoint", NearestWayPoint);
+		VehicleController->BehaviorTreeComponent->RestartLogic();
+	}
+	else
+	{
+		PrintLog("Distance " + FString::SanitizeFloat(Distance));
+	}
+	
+
+	return false;
+}
+
+TArray<AActor*> AWheeledVehicleObject::FindAllWaypoint()
+{
+	TArray<AActor*> FoundActors;
+	UGameplayStatics::GetAllActorsOfClass(GetWorld(), AWayPoint::StaticClass(), FoundActors);
+	return FoundActors;
 }
 
 void AWheeledVehicleObject::ApplyControlValue(float Throttle, float Steering, float Brake)

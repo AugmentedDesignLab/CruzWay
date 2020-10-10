@@ -8,7 +8,7 @@
 
 #define BRAKE_START_DISTANCE 700
 #define SLOWDOWN_DISTANCE 710
-#define BRAKE_INC_RATE 0.01
+
 
 
 
