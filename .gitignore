@@ -24,6 +24,8 @@ Plugins/ParseXML/Binaries/*
 Plugins/ParseXML/Intermediate/*
 Plugins/SpawnPedestrian/Binaries/*
 Plugins/SpawnPedestrian/Intermediate/*
+Plugins/BT_Plugin/Binaries/*
+Plugins/BT_Plugin/Intermediate/*
 
 
 # User-specific files
