@@ -33,6 +33,7 @@ EBTNodeResult::Type UTaskLaneFollow::ExecuteTask(UBehaviorTreeComponent& OwnerCo
 
 float UTaskLaneFollow::UpdatedSteeringValue(AVehicleController* VehicleController)
 {
+	PrintLog("Steering Update");
 	//PrintLog("Steering Update");
 	float SteerValue = 0.0;
 	AWayPoint* WayPoint = VehicleController->WayPoint;
@@ -138,5 +139,3 @@ AWayPoint* UTaskLaneFollow::GetRandomWayPointFromConnectedSpline(AWayPoint* Give
 	int RandomNumber = FMath::RandRange(0, NumberOfConnectedWayPoint - 1);
 	return GivenWayPoint->ConnectedSpline[RandomNumber];
 }
-
-

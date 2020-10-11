@@ -9,7 +9,7 @@ AVehicleController::AVehicleController()
 	PrimaryActorTick.bCanEverTick = true;
 	//PrintLog("Inside controller constructor");
 
-	//Creating subobject 
+	//Creating subobject
 	BehaviorTreeComponent = CreateDefaultSubobject<UBehaviorTreeComponent>("VehicleBehaviorTree");
 	BlackboardComponent = CreateDefaultSubobject<UBlackboardComponent>("VehicleBlackBoard");
 }
@@ -24,14 +24,14 @@ void AVehicleController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	//PrintLog("Inside  tick ");
-	
+
 }
 
 UBehaviorTree* AVehicleController::LoadBehaviorTree(FString BehaviorTreePath)
 {
 	UBehaviorTree* BehaviorTreeAsset = LoadObjFromPath<UBehaviorTree>(FName(*BehaviorTreePath));
 	if (BehaviorTreeAsset != NULL)
-	{ 
+	{
 		//PrintLog(" asset name ");
 		return BehaviorTreeAsset;
 	}
@@ -89,21 +89,12 @@ bool AVehicleController::InitializeVehicleController(FString BehaviorTreePath, A
 		StartBehaviorTree(BehaviorTree);
 		return true;
 	}
-	
+
 	return false;
-	
+
+
+
+
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

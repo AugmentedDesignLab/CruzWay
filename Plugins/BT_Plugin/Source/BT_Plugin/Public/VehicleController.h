@@ -11,13 +11,13 @@
 #include "VehicleController.generated.h"
 
 /**
- * 
+ *
  */
 UCLASS()
 class BT_PLUGIN_API AVehicleController : public AAIController
 {
 	GENERATED_BODY()
-	
+
 public:
 	AVehicleController();
 

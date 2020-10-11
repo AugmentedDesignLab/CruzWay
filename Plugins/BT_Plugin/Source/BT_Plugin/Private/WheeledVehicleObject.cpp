@@ -91,7 +91,7 @@ FRotator AWheeledVehicleObject::CalculateRotation()
 
 bool AWheeledVehicleObject::InitializeWheeledVehicle(FString Path, AWayPoint* WP)
 {
-	
+
 	PrintLog("Initialize Wheeled Vehicle ");
 	BehaviorTreePath = Path;
 	WayPoint = WP;
@@ -182,7 +182,7 @@ void AWheeledVehicleObject::ApplyControlValue(float Throttle, float Steering, fl
 
 void AWheeledVehicleObject::InitializeBlackBoardValues()
 {
-	
+
 	if (VehicleController != NULL)
 	{
 		PrintLog("Inside Initialize Black Board ");
@@ -194,5 +194,3 @@ void AWheeledVehicleObject::InitializeBlackBoardValues()
 		VehicleController->BlackboardComponent->SetValueAsInt("VelocityStatus", 1);
 	}
 }
-
-
