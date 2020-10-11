@@ -29,13 +29,17 @@ void ARepeatedVehicleSpawner::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 	time = time + DeltaTime;
 
-	if (time > 7.0)
+	if (time > 7.0 && SpawnedVehicleList.Num() <= NumberOfVehicles)
 	{
 		time = 0.0f;
 		for (FVehicleSpecificationR Vehicle : VehicleList)
 		{
 			AWheeledVehicleObject* temp = SpawnVehicle(Vehicle);
 			SpawnedVehicleList.Add(temp);
+			if (SpawnedVehicleList.Num() == NumberOfVehicles)
+			{
+				break;
+			}
 		}
 	}
 }

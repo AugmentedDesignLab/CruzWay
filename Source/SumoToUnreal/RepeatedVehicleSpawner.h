@@ -47,6 +47,9 @@ public:
 
 	TArray<AWheeledVehicleObject*> SpawnedVehicleList;
 
+	UPROPERTY(EditAnywhere)
+	int NumberOfVehicles = 0;
+
 	float time = 0.0f;
 
 	AWheeledVehicleObject* SpawnVehicle(FVehicleSpecificationR VehicleSpec);
