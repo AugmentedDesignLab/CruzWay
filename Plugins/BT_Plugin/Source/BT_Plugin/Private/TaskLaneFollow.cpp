@@ -7,12 +7,12 @@
 #include "WheeledVehicleMovementComponent.h"
 #include "Kismet/KismetMathLibrary.h"
 
-#define LOOK_AHEAD_MUL 1.5
-#define LOOK_AHEAD_AD 500
+#define LOOK_AHEAD_MUL 1
+#define LOOK_AHEAD_AD 50
 #define SPLINE_CHANGE_THRESHOLD 100
 #define THROTTLE_INC_RATE 0.007
 #define THROTTLE_DEC_RATE 0.007
-#define THROTTLE_UP_LIMIT 0.5
+#define THROTTLE_UP_LIMIT 0.50
 #define THROTTLE_DOWN_LIMIT 0.0
 #define ANGLE_WEIGHT 1.0
 
@@ -33,7 +33,7 @@ EBTNodeResult::Type UTaskLaneFollow::ExecuteTask(UBehaviorTreeComponent& OwnerCo
 
 float UTaskLaneFollow::UpdatedSteeringValue(AVehicleController* VehicleController)
 {
-	PrintLog("Steering Update");
+	//PrintLog("Steering Update");
 	//PrintLog("Steering Update");
 	float SteerValue = 0.0;
 	AWayPoint* WayPoint = VehicleController->WayPoint;
@@ -94,7 +94,7 @@ void UTaskLaneFollow::ChangeWayPointUpdateBlackBoard(AWayPoint* WayPoint, AVehic
 		if (GetRandomFromConnectedWayPoint->isStopSignConnected)
 		{
 			VehicleController->BlackboardComponent->SetValueAsBool("IsStopSignAhead", true);
-			VehicleController->BlackboardComponent->SetValueAsVector("StopSignLocation", GetRandomFromConnectedWayPoint->StopSignLocation);
+			//VehicleController->BlackboardComponent->SetValueAsVector("StopSignLocation", GetRandomFromConnectedWayPoint->StopSignLocation);
 		}
 	}
 }
