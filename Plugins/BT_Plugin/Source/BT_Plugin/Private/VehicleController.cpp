@@ -56,7 +56,7 @@ bool AVehicleController::InitializeBlackBoard(UBehaviorTree* BehaviorTree)
 
 bool AVehicleController::SetWayPoint(AWayPoint* WP)
 {
-	PrintLog("Setting Waypoint ");
+	//PrintLog("Setting Waypoint ");
 	if (WP != NULL)
 	{
 		WayPoint = WP;
@@ -64,7 +64,7 @@ bool AVehicleController::SetWayPoint(AWayPoint* WP)
 	}
 	else
 	{
-		PrintLog("Waypoint NULL");
+		//PrintLog("Waypoint NULL");
 		return false;
 	}
 

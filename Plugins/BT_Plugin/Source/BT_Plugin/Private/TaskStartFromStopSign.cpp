@@ -10,7 +10,7 @@ EBTNodeResult::Type UTaskStartFromStopSign::ExecuteTask(UBehaviorTreeComponent& 
 	UBehaviorTreeComponent& MyComp = OwnerComp;
 	AVehicleController* VehicleController = &MyComp ? Cast<AVehicleController>(MyComp.GetOwner()) : NULL;
 
-	PrintLog("Task start from stop sign ");
+	//PrintLog("Task start from stop sign ");
 
 	VehicleController->BlackboardComponent->SetValueAsInt("VelocityStatus", 1);
 	VehicleController->BlackboardComponent->SetValueAsBool("IsStopSignAhead", false);

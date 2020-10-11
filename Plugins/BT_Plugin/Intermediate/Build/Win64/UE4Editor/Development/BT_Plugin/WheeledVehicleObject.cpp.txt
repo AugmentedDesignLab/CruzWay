@@ -1,40 +1,5 @@
 C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Definitions.BT_Plugin.h
-C:/Users/iparanja/Documents/Unreal Projects/CruzWay/Sumo2Unreal/Plugins/BT_Plugin/Source/BT_Plugin/Private/BT_PluginEdMode.cpp
-C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Source\BT_Plugin\Public\BT_PluginEdMode.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Editor\UnrealEd\Public\EdMode.h
-c:\program files\epic games\ue_4.23\engine\source\editor\unrealed\public\EditorModeRegistry.h
-C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Source\BT_Plugin\Public\BT_PluginEdModeToolkit.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Editor\UnrealEd\Public\Toolkits/ToolkitManager.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Editor\UnrealEd\Public\EditorModeManager.h
-C:/Users/iparanja/Documents/Unreal Projects/CruzWay/Sumo2Unreal/Plugins/BT_Plugin/Source/BT_Plugin/Private/BT_PluginEdModeToolkit.cpp
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\Engine/Selection.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Selection.generated.h
-C:/Users/iparanja/Documents/Unreal Projects/CruzWay/Sumo2Unreal/Plugins/BT_Plugin/Source/BT_Plugin/Private/TaskLaneFollow.cpp
-C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Source\BT_Plugin\Public\TaskLaneFollow.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/Tasks/BTTask_BlackboardBase.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTTaskNode.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTNode.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BehaviorTreeTypes.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BehaviorTreeTypes.generated.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BehaviorTreeComponent.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\GameplayTags\Classes\GameplayTagContainer.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTags\GameplayTagContainer.generated.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AIModule\Classes\AITypes.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\NavigationSystem\Public\NavigationSystemTypes.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\AI/NavigationSystemConfig.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationSystemConfig.generated.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Core\Public\Math/GenericOctreePublic.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AITypes.generated.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AIModule\Classes\BrainComponent.h
-c:\program files\epic games\ue_4.23\engine\source\runtime\aimodule\classes\AIResourceInterface.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIResourceInterface.generated.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BrainComponent.generated.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BehaviorTreeComponent.generated.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AIModule\Classes\Tasks/AITask.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AITask.generated.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTNode.generated.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTTaskNode.generated.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTTask_BlackboardBase.generated.h
+C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Source\BT_Plugin\Public\WheeledVehicleObject.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Public\Engine.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Core\Public\Misc/MonolithicHeaderBoilerplate.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Core\Public\Core.h
@@ -166,6 +131,7 @@ C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\EngineSettings\Classes
 C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\EngineSettings\GeneralProjectSettings.generated.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\EngineSettings\Classes\HudSettings.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\EngineSettings\HudSettings.generated.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Core\Public\Math/GenericOctreePublic.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Core\Public\Math/GenericOctree.h
 c:\program files\epic games\ue_4.23\engine\source\runtime\core\public\math\GenericOctree.inl
 c:\program files\epic games\ue_4.23\engine\source\runtime\engine\public\PrecomputedLightVolume.h
@@ -660,6 +626,8 @@ C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\Engine/
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\Engine/SimpleConstructionScript.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SimpleConstructionScript.generated.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SCS_Node.generated.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\Engine/Selection.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Selection.generated.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\Engine/SkeletalMeshSocket.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SkeletalMeshSocket.generated.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\Sound/DialogueSoundWaveProxy.h
@@ -805,11 +773,18 @@ C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\ParseXML\Intermediate\Build\Win64\UE4Editor\Inc\ParseXML\WayPoint.generated.h
 c:\users\iparanja\documents\unreal projects\cruzway\sumo2unreal\plugins\bt_plugin\source\bt_plugin\public\VehicleController.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AIModule\Classes\AIController.h
+c:\program files\epic games\ue_4.23\engine\source\runtime\aimodule\classes\AITypes.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\NavigationSystem\Public\NavigationSystemTypes.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\AI/NavigationSystemConfig.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationSystemConfig.generated.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AITypes.generated.h
 c:\program files\epic games\ue_4.23\engine\source\runtime\aimodule\classes\Navigation/PathFollowingComponent.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\NavigationSystem\Public\NavigationData.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\AI/Navigation/NavigationDataInterface.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\NavigationDataInterface.generated.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\NavigationSystem\NavigationData.generated.h
+c:\program files\epic games\ue_4.23\engine\source\runtime\aimodule\classes\AIResourceInterface.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIResourceInterface.generated.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\PathFollowingComponent.generated.h
 c:\program files\epic games\ue_4.23\engine\source\runtime\aimodule\classes\Perception/AIPerceptionListenerInterface.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIPerceptionListenerInterface.generated.h
@@ -818,6 +793,14 @@ C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\In
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Public\VisualLogger/VisualLoggerDebugSnapshotInterface.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\VisualLoggerDebugSnapshotInterface.generated.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\AIController.generated.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AIModule\Classes\BehaviorTree\BehaviorTreeComponent.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BehaviorTreeTypes.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BehaviorTreeTypes.generated.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\GameplayTags\Classes\GameplayTagContainer.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTags\GameplayTagContainer.generated.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AIModule\Classes\BrainComponent.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BrainComponent.generated.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BehaviorTreeComponent.generated.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AIModule\Classes\BehaviorTree\BlackboardComponent.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/Blackboard/BlackboardKeyType.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BlackboardKeyType.generated.h
@@ -829,12 +812,10 @@ C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AIModule\Classes\Behav
 C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BlackboardData.generated.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BlackboardComponent.generated.h
 C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin\VehicleController.generated.h
-C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin\TaskLaneFollow.generated.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Plugins\Runtime\PhysXVehicles\Source\PhysXVehicles\Public\WheeledVehicle.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Plugins\Runtime\PhysXVehicles\Intermediate\Build\Win64\UE4Editor\Inc\PhysXVehicles\WheeledVehicle.generated.h
+C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin\WheeledVehicleObject.generated.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Plugins\Runtime\PhysXVehicles\Source\PhysXVehicles\Public\WheeledVehicleMovementComponent.h
 c:\program files\epic games\ue_4.23\engine\plugins\runtime\physxvehicles\source\physxvehicles\public\VehicleWheel.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Plugins\Runtime\PhysXVehicles\Intermediate\Build\Win64\UE4Editor\Inc\PhysXVehicles\VehicleWheel.generated.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Plugins\Runtime\PhysXVehicles\Intermediate\Build\Win64\UE4Editor\Inc\PhysXVehicles\WheeledVehicleMovementComponent.generated.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\Kismet/KismetMathLibrary.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Core\Public\Misc/QualifiedFrameTime.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetMathLibrary.generated.h
-c:\program files\epic games\ue_4.23\engine\source\runtime\engine\classes\kismet\KismetMathLibrary.inl

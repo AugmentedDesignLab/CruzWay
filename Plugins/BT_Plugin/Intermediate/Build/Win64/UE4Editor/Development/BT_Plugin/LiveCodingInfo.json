@@ -2,14 +2,14 @@
 	"RemapUnityFiles": 
 	{
 		"Module.BT_Plugin.cpp.obj": [
-			"BT_Plugin.cpp.obj",
 			"BT_PluginEdMode.cpp.obj",
 			"BT_PluginEdModeToolkit.cpp.obj",
+			"TaskLaneFollow.cpp.obj",
+			"BT_Plugin.cpp.obj",
 			"TaskStartFromStopSign.cpp.obj",
 			"TaskStopAtStopSign.cpp.obj",
 			"VehicleController.cpp.obj",
-			"WheeledVehicleObject.cpp.obj",
-			"TaskLaneFollow.cpp.obj"
+			"WheeledVehicleObject.cpp.obj"
 		],
 		"Module.BT_Plugin.gen.cpp.obj": [
 			"BT_Plugin.init.gen.cpp.obj",

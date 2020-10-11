@@ -17,7 +17,7 @@ AWheeledVehicleObject::AWheeledVehicleObject()
 void AWheeledVehicleObject::BeginPlay()
 {
 	Super::BeginPlay();
-	PrintLog("Inside vehicle object beginplay");
+	//PrintLog("Inside vehicle object beginplay");
 	VehicleController = GetController<AVehicleController>();
 	//InitializeWheeledVehicle(BehaviorTreePath, WayPoint);
 	//InitializeBlackBoardValues();
@@ -56,18 +56,18 @@ bool AWheeledVehicleObject::SelfDestroy()
 bool AWheeledVehicleObject::InitializeWheeledVehicle(FString Path, AWayPoint* WP)
 {
 
-	PrintLog("Initialize Wheeled Vehicle ");
+	//PrintLog("Initialize Wheeled Vehicle ");
 	BehaviorTreePath = Path;
 	WayPoint = WP;
 	if (VehicleController != NULL)
 	{
-		PrintLog("Vehicle Controller not NULL");
+		//PrintLog("Vehicle Controller not NULL");
 		VehicleController->InitializeVehicleController(BehaviorTreePath, WayPoint);
 		return true;
 	}
 	else
 	{
-		PrintLog("Vehicle Controller NULL");
+		//PrintLog("Vehicle Controller NULL");
 		return false;
 	}
 }
@@ -84,7 +84,7 @@ void AWheeledVehicleObject::InitializeBlackBoardValues()
 
 	if (VehicleController != NULL)
 	{
-		PrintLog("Inside Initialize Black Board ");
+		//PrintLog("Inside Initialize Black Board ");
 		VehicleController->BlackboardComponent->SetValueAsObject("WheeledVehicleMovementComponent", this->GetVehicleMovement());
 		VehicleController->BlackboardComponent->SetValueAsObject("WayPoint", this->WayPoint);
 		VehicleController->BlackboardComponent->SetValueAsBool("IsStopSignAhead", this->WayPoint->isStopSignConnected);

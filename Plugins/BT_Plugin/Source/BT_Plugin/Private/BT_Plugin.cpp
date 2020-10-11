@@ -8,7 +8,7 @@
 void FBT_PluginModule::StartupModule()
 {
 	// This code will execute after your module is loaded into memory; the exact timing is specified in the .uplugin file per-module
-	UE_LOG(LogTemp, Warning, TEXT("BT plugin module start "));
+	//UE_LOG(LogTemp, Warning, TEXT("BT plugin module start "));
 	FEditorModeRegistry::Get().RegisterMode<FBT_PluginEdMode>(FBT_PluginEdMode::EM_BT_PluginEdModeId, LOCTEXT("BT_PluginEdModeName", "BT_PluginEdMode"), FSlateIcon(), true);
 
 }
