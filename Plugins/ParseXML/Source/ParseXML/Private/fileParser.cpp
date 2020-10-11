@@ -18,6 +18,14 @@ UfileParser::UfileParser(const TCHAR* selectedFile) : selectedXMLFile(selectedFi
 	getAllActorsOfClass();
 	World->SpawnActor<AAtmosphericFog>(Location, Rotation, SpawnParameters);
 	Location.Z = 100000.0f;
+	/*
+	UStaticMeshComponent* planeMeshComponent;
+	planeMeshComponent = CreateDefaultSubobject<UStaticMeshComponent>(TEXT("planeActor"));
+	static ConstructorHelpers::FObjectFinder<UStaticMesh>planeMeshAsset(TEXT("StaticMesh'/Engine/BasicShapes/Plane.Plane'"));
+	UStaticMesh* planeMesh = planeMeshAsset.Object;
+	planeMeshComponent->SetStaticMesh(planeMesh);
+	*/
+	//Location.Z = 100000.0f;
 	ASkyLight* Skylight = World->SpawnActor<ASkyLight>(Location, Rotation, SpawnParameters);
 	if (Skylight !=nullptr) {
 		Skylight->GetLightComponent()->SetIntensity(5.0f);
