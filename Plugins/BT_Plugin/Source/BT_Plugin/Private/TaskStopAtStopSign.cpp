@@ -25,7 +25,7 @@ EBTNodeResult::Type UTaskStopAtStopSign::ExecuteTask(UBehaviorTreeComponent& Own
 	FVector StopLocationOnSpline = MyController->WayPoint->SplineComponent->GetLocationAtDistanceAlongSpline(MyController->WayPoint->TotalDistance, ESplineCoordinateSpace::World);
 
 	float Distance = FVector::Distance(VehicleLocationOnSpline, StopLocationOnSpline);
-	PrintLog("Distance " + FString::SanitizeFloat(Distance));
+	//PrintLog("Distance " + FString::SanitizeFloat(Distance));
 	if (Distance < SLOWDOWN_DISTANCE && Distance > BRAKE_START_DISTANCE)
 	{
 		MyController->BlackboardComponent->SetValueAsInt("VelocityStatus", -1);
@@ -33,7 +33,7 @@ EBTNodeResult::Type UTaskStopAtStopSign::ExecuteTask(UBehaviorTreeComponent& Own
 	}
 	if (Distance < BRAKE_START_DISTANCE)
 	{
-		PrintLog("Braking..l... success");
+		//PrintLog("Braking..l... success");
 		float ThrottleValue = MyController->BlackboardComponent->GetValueAsFloat("ThrottleValue");
 		MyController->BlackboardComponent->SetValueAsFloat("BrakeValue", ThrottleValue);
 		MyController->BlackboardComponent->SetValueAsFloat("ThrottleValue", 0);

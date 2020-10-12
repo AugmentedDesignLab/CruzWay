@@ -43,7 +43,7 @@ public:
 	void PrintLog(FString Text)
 	{
 		if (!GEngine) return;
-		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Cyan, *Text);
+		//GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Cyan, *Text);
 	}
 
 	//Function to load object from content folder. Copy path from UE
