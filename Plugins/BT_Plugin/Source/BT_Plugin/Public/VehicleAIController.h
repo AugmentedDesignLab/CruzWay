@@ -8,6 +8,7 @@
 #include <ParseXML/Public/WayPoint.h>
 #include <Runtime\AIModule\Classes\BehaviorTree\BehaviorTreeComponent.h>
 #include <Runtime\AIModule\Classes\BehaviorTree\BlackboardComponent.h>
+#include "VehicleSpecification.h"
 #include "VehicleAIController.generated.h"
 
 /**
@@ -26,12 +27,13 @@ protected:
 
 public:
 	void Tick(float DeltaTime) override;
-
+	bool InitializeVehicleAIController(FVehicleAISpecification VehicleSpec);
 
 
 	UBlackboardComponent* BlackboardComponent;
 	UBehaviorTreeComponent* BehaviorTreeComponent;
-	AWayPoint* WayPoint;
+	
+	FVehicleAISpecification VehicleSpecification;
 
 
 	void PrintLog(FString Text)

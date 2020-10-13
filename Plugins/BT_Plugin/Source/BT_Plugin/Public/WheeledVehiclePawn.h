@@ -7,11 +7,13 @@
 #include "Engine.h"
 #include <ParseXML/Public/WayPoint.h>
 #include "VehicleAIController.h"
+#include "VehicleSpecification.h"
 #include "WheeledVehiclePawn.generated.h"
 
 /**
  * 
  */
+
 UCLASS()
 class BT_PLUGIN_API AWheeledVehiclePawn : public AWheeledVehicle
 {
@@ -25,15 +27,16 @@ protected:
 	virtual void BeginPlay() override;
 public:
 	virtual void Tick(float DeltaTime) override;
-	bool InitializeWheeledVehicle(FString BehaviorTreePath, AWayPoint* WayPoint);
+	bool InitializeWheeledVehicle(FVehicleAISpecification VehicleSpec);
 	void InitializeBlackBoardValues();
 
 
 
 
 	AVehicleAIController* VehicleController;
-	AWayPoint* WayPoint;
-	FString BehaviorTreePath;
+	
+	UPROPERTY(EditAnywhere)
+	FVehicleAISpecification VehicleSpecification;
 
 	void PrintLog(FString Text)
 	{

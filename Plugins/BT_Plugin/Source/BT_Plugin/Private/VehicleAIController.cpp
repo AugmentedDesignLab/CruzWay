@@ -20,3 +20,10 @@ void AVehicleAIController::BeginPlay()
 void AVehicleAIController::Tick(float DeltaTime)
 {
 }
+
+bool AVehicleAIController::InitializeVehicleAIController(FVehicleAISpecification VehicleSpec)
+{	
+	VehicleSpecification = VehicleSpec;
+	//BlackboardComponent->InitializeBlackboard(&VehicleSpecification.BehaviorTree);
+	return false;
+}
