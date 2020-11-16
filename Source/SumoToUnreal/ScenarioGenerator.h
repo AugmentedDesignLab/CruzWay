@@ -4,7 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "WheeledVehicleObject.h"
+#include "BT_Vehicle/WheeledVehicleObject.h"
 #include "WayPoint.h"
 #include "RoadMesh.h"
 #include "PedestrianCharacter.h"

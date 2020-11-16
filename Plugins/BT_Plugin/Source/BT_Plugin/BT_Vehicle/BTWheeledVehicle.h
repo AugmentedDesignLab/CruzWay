@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "WheeledVehicle.h"
+#include "BT_VehicleSpecification/VehicleSpecification.h"
 #include "BTWheeledVehicle.generated.h"
 
 /**

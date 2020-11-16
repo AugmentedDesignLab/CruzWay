@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "Engine.h"
 #include <ParseXML/Public/WayPoint.h>
-#include "VehicleController.h"
+#include "BT_Controller/VehicleController.h"
 #include "WheeledVehicle.h"
 #include "WheeledVehicleObject.generated.h"
 

@@ -8,7 +8,7 @@
 #include <ParseXML/Public/WayPoint.h>
 #include <Runtime\AIModule\Classes\BehaviorTree\BehaviorTreeComponent.h>
 #include <Runtime\AIModule\Classes\BehaviorTree\BlackboardComponent.h>
-#include "VehicleSpecification.h"
+#include "BT_VehicleSpecification/VehicleSpecification.h"
 #include "VehicleAIController.generated.h"
 
 /**
