@@ -6,8 +6,8 @@
 #include "WheeledVehicle.h"
 #include "Engine.h"
 #include <ParseXML/Public/WayPoint.h>
-#include "BT_Controller/VehicleAIController.h"
-#include "BT_VehicleSpecification/VehicleSpecification.h"
+#include "VehicleAIController.h"
+#include "VehicleSpecification.h"
 #include "WheeledVehiclePawn.generated.h"
 
 /**
