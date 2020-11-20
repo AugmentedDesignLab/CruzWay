@@ -4,7 +4,12 @@
 
 #include "CoreMinimal.h"
 #include "WheeledVehicle.h"
+#include "VehicleSpecification.h"
+#include "Engine.h"
+#include <ParseXML/Public/WayPoint.h>
 #include "BTWheeledVehicle.generated.h"
+
+#define print(text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 1.5, FColor::Green,text)
 
 /**
  * 
@@ -13,5 +18,26 @@ UCLASS()
 class BT_PLUGIN_API ABTWheeledVehicle : public AWheeledVehicle
 {
 	GENERATED_BODY()
+
+private:
+	ABTWheeledVehicle();
 	
+
+protected:
+	virtual void BeginPlay() override;
+
+public:
+
+	UPROPERTY(EditAnywhere)
+	FDriverSpecificationBT DriverSpecification;
+
+	UPROPERTY(EditAnywhere)
+	TArray<AWayPoint*> Route;
+
+	virtual void Tick(float DeltaTime) override;
+	virtual FVector GetVelocity() const override;
+	
+
+
+
 };
