@@ -44,7 +44,7 @@ float UTaskLaneFollow::UpdatedSteeringValue(AVehicleController* VehicleControlle
 	FVector VehicleVelocity = VehicleController->BlackboardComponent->GetValueAsVector("VehicleVelocity");
 	//FVector VehicleNextLocation = VehicleLocation + VehicleVelocity * LOOK_AHEAD;
 
-	if ((WayPoint->TotalDistance - DistanceAlongWayPoint) < SPLINE_CHANGE_THRESHOLD)
+	if ((WayPoint->TotalSplineLength - DistanceAlongWayPoint) < SPLINE_CHANGE_THRESHOLD)
 	{
 		PrintLog("Changing Spline");
 		ChangeWayPointUpdateBlackBoard(WayPoint, VehicleController);

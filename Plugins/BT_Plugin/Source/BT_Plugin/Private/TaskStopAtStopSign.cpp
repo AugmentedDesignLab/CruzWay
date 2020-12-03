@@ -22,7 +22,7 @@ EBTNodeResult::Type UTaskStopAtStopSign::ExecuteTask(UBehaviorTreeComponent& Own
 	FVector VehicleLocationOnSpline = MyController->WayPoint->SplineComponent->FindLocationClosestToWorldLocation(VehicleLocation, ESplineCoordinateSpace::World);
 
 	//FVector StopSignLocation = MyController->WayPoint->StopSignLocation;
-	FVector StopLocationOnSpline = MyController->WayPoint->SplineComponent->GetLocationAtDistanceAlongSpline(MyController->WayPoint->TotalDistance, ESplineCoordinateSpace::World);
+	FVector StopLocationOnSpline = MyController->WayPoint->SplineComponent->GetLocationAtDistanceAlongSpline(MyController->WayPoint->TotalSplineLength, ESplineCoordinateSpace::World);
 
 	float Distance = FVector::Distance(VehicleLocationOnSpline, StopLocationOnSpline);
 	//PrintLog("Distance " + FString::SanitizeFloat(Distance));

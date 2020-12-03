@@ -21,12 +21,15 @@ class BT_PLUGIN_API ABTWheeledVehicle : public AWheeledVehicle
 
 private:
 	ABTWheeledVehicle();
-	
+	int VehicleID;
 
 protected:
 	virtual void BeginPlay() override;
 
 public:
+
+	UPROPERTY(EditAnywhere)
+	FString BT_Path;
 
 	UPROPERTY(EditAnywhere)
 	FDriverSpecificationBT DriverSpecification;
@@ -37,6 +40,8 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	virtual FVector GetVelocity() const override;
 	
+	void SetVehicleID(int ID);
+	int GetVehicleID();
 
 
 

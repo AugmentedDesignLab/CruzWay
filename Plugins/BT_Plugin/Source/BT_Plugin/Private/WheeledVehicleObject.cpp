@@ -124,7 +124,7 @@ bool AWheeledVehicleObject::ReInitializeWheeledVehicle()
 	float Distance = 10000.0;
 	for (int i = 0; i < WayPoints.Num(); i++)
 	{
-		if (WayPoints[i]->turnType == "straight" && WayPoints[i]->TotalDistance > 3000)
+		if (WayPoints[i]->turnType == "straight" && WayPoints[i]->TotalSplineLength > 3000)
 		{
 			//PrintLog("Straight road" + WayPoints[i]->directionOfSpline.ToString());
 			FVector WayPointLocation = WayPoints[i]->GetActorLocation();

@@ -32,8 +32,9 @@ public:
 	UPROPERTY(EditAnywhere)
 	TArray<AWayPoint*> CutSpline;
 	UPROPERTY(EditAnywhere)
-	TArray<APawn*> VehiclePawnList;
-
+	TArray<AWayPoint*> NeighborSpline;
+	UPROPERTY(EditAnywhere)
+	TArray<int> BTVehicleIDOnSpline;
 	UPROPERTY(EditAnywhere)
 	FString turnType;
 	FVector directionOfSpline;
@@ -41,7 +42,7 @@ public:
 	//UPROPERTY(EditAnywhere)
 	//TMap<FString, AWayPoint*> ConnectedSplineMap;
 	UPROPERTY(EditAnywhere)
-	float TotalDistance = 0.0;
+	float TotalSplineLength = 0.0;
 	UPROPERTY(EditAnywhere)
 	int SpeedLimit = 0;
 	UPROPERTY(EditAnywhere)

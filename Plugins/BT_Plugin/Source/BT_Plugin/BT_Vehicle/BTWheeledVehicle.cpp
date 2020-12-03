@@ -10,9 +10,9 @@
 ABTWheeledVehicle::ABTWheeledVehicle()
 {
 	PrimaryActorTick.bCanEverTick = true;
-	BT_IDM testIDM = BT_IDM();
-	testIDM.InitIDM(6, 9, 8, 10, 98, 8);
-	print(testIDM.IDM_value_string());
+	//BT_IDM testIDM = BT_IDM();
+	//testIDM.InitIDM(6, 9, 8, 10, 98, 8);
+	//print(testIDM.IDM_value_string());
 	
 }
 
@@ -25,6 +25,16 @@ void ABTWheeledVehicle::BeginPlay()
 FVector ABTWheeledVehicle:: GetVelocity() const
 {
 	return Super::GetVelocity();
+}
+
+void ABTWheeledVehicle::SetVehicleID(int ID)
+{
+	this->VehicleID = ID;
+}
+
+int ABTWheeledVehicle::GetVehicleID()
+{
+	return VehicleID;
 }
 
 void ABTWheeledVehicle::Tick(float DeltaTime)

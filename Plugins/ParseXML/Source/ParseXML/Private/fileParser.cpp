@@ -213,7 +213,7 @@ void UfileParser::MakeSpline() {
 	SplineComponent->SplineActor = WayPointDeferred;
 	SplineComponent->SplineActor->splineID = tempEdgeID;
 	SplineComponent->SplineActor->SpeedLimit = 8;
-	SplineComponent->SplineActor->TotalDistance = SplineComponent->SplineActor->SplineComponent->GetSplineLength();
+	SplineComponent->SplineActor->TotalSplineLength = SplineComponent->SplineActor->SplineComponent->GetSplineLength();
 	SplineComponent->SplineActor->calculateCurrentSplineTurnTypes();
 	SplineContainer.SplineMap.Add(WayPointDeferred->splineID, SplineComponent);
 	UE_LOG(LogEngine, Warning, TEXT("The added spline is %s"), *(WayPointDeferred->splineID));
@@ -544,7 +544,7 @@ SimpleEdgePtr UfileParser::InitializeEdge(const TCHAR* edgeType) {
 			SplineContainer.SplineMap.Add(Spline->SplineActor->splineID, Spline);
 		}
 		Spline->SplineActor->SpeedLimit = 20;
-		Spline->SplineActor->TotalDistance = Spline->SplineActor->SplineComponent->GetSplineLength(); 
+		Spline->SplineActor->TotalSplineLength = Spline->SplineActor->SplineComponent->GetSplineLength(); 
 		checkConnectedSplineID = Spline->SplineActor->splineID;
 		Spline->SplineActor->calculateCurrentSplineTurnTypes();
 		if (FString(edgeType).Equals(TEXT("crossing")))
