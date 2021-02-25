@@ -1,8 +1,10 @@
 C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Definitions.BT_Plugin.h
-C:/Users/iparanja/Documents/Unreal Projects/CruzWay/Sumo2Unreal/Plugins/BT_Plugin/Source/BT_Plugin/Private/BT_PluginEdMode.cpp
+C:/Users/iparanja/Documents/Unreal Projects/CruzWay/Sumo2Unreal/Plugins/BT_Plugin/Source/BT_Plugin/Private/BT_Plugin.cpp
+C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Source\BT_Plugin\Public\BT_Plugin.h
 C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Source\BT_Plugin\Public\BT_PluginEdMode.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Editor\UnrealEd\Public\EdMode.h
 c:\program files\epic games\ue_4.23\engine\source\editor\unrealed\public\EditorModeRegistry.h
+C:/Users/iparanja/Documents/Unreal Projects/CruzWay/Sumo2Unreal/Plugins/BT_Plugin/Source/BT_Plugin/Private/BT_PluginEdMode.cpp
 C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Source\BT_Plugin\Public\BT_PluginEdModeToolkit.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Editor\UnrealEd\Public\Toolkits/ToolkitManager.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Editor\UnrealEd\Public\EditorModeManager.h
@@ -838,3 +840,19 @@ C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Engine\Classes\Kismet/
 C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\Core\Public\Misc/QualifiedFrameTime.h
 C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetMathLibrary.generated.h
 c:\program files\epic games\ue_4.23\engine\source\runtime\engine\classes\kismet\KismetMathLibrary.inl
+C:/Users/iparanja/Documents/Unreal Projects/CruzWay/Sumo2Unreal/Plugins/BT_Plugin/Source/BT_Plugin/Private/TaskStartFromStopSign.cpp
+C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Source\BT_Plugin\Public\TaskStartFromStopSign.h
+C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin\TaskStartFromStopSign.generated.h
+C:/Users/iparanja/Documents/Unreal Projects/CruzWay/Sumo2Unreal/Plugins/BT_Plugin/Source/BT_Plugin/Private/TaskStopAtStopSign.cpp
+C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Source\BT_Plugin\Public\TaskStopAtStopSign.h
+C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin\TaskStopAtStopSign.generated.h
+C:/Users/iparanja/Documents/Unreal Projects/CruzWay/Sumo2Unreal/Plugins/BT_Plugin/Source/BT_Plugin/Private/VehicleController.cpp
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AIModule\Classes\BehaviorTree\BehaviorTree.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Source\Runtime\AIModule\Classes\BehaviorTree/BTCompositeNode.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BTCompositeNode.generated.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Intermediate\Build\Win64\UE4Editor\Inc\AIModule\BehaviorTree.generated.h
+C:/Users/iparanja/Documents/Unreal Projects/CruzWay/Sumo2Unreal/Plugins/BT_Plugin/Source/BT_Plugin/Private/WheeledVehicleObject.cpp
+C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Source\BT_Plugin\Public\WheeledVehicleObject.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Plugins\Runtime\PhysXVehicles\Source\PhysXVehicles\Public\WheeledVehicle.h
+C:\Program Files\Epic Games\UE_4.23\Engine\Plugins\Runtime\PhysXVehicles\Intermediate\Build\Win64\UE4Editor\Inc\PhysXVehicles\WheeledVehicle.generated.h
+C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Inc\BT_Plugin\WheeledVehicleObject.generated.h

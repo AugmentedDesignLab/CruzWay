@@ -63,9 +63,10 @@ void FParseXMLModule::PluginButtonClicked()
 	// Put your "OnButtonClicked" stuff here
 
 	const FString& windowTitle = "Browse XML Files";
-	const FString& defaultFilePath = "C:/Users";
+	FString defaultFilePath = "C:/Users/iparanja/Documents/Unreal Projects/NewS2U/Sumo2Unreal_4.22/Road_Network_Files/road_intersections";
 	const FString& defaultFileName = "SumoToUnreal.cpp";
 	const FString& defaultFileType = "*.jpg";
+	FVector multipleSpawningOffset(0.0f, 0.0f, 0.0f);
 
 	TArray <FString> originalOutFileNames = {};
 	TArray <FString>& OutFilenames = originalOutFileNames;
@@ -77,21 +78,30 @@ void FParseXMLModule::PluginButtonClicked()
 	const TSharedPtr<SWindow>& MainFrameParentWindow = MainFrameModule.GetParentWindow();
 	if (MainFrameParentWindow.IsValid() && MainFrameParentWindow->GetNativeWindow().IsValid())
 	{
-		ParentWindowWindowHandle = MainFrameParentWindow->GetNativeWindow()->GetOSWindowHandle();
-		if (DesktopPlatform->OpenFileDialog(ParentWindowWindowHandle, windowTitle, defaultFilePath, defaultFileName,
-			defaultFileType, 0x00, OutFilenames))
+		//ParentWindowWindowHandle = MainFrameParentWindow->GetNativeWindow()->GetOSWindowHandle();
+		GEngine->Exec(nullptr, TEXT("py \"C:\\Users\\iparanja\\Documents\\Unreal Projects\\CruzWay\\Sumo2Unreal\\Source\\python\\test.py\""));
+		for (int i = 0; i < 3; i++) 
 		{
-			FString selectedFile = FString(OutFilenames[0]);
-			UfileParser fileParser(*selectedFile); //Selected File from the file dialog
+			UE_LOG(LogTemp, Warning, TEXT("=============The FOR LOOP"));
+			//if (DesktopPlatform->OpenFileDialog(ParentWindowWindowHandle, windowTitle, defaultFilePath, defaultFileName,
+			//defaultFileType, 0x00, OutFilenames))
+			//{ 
+				if (i > 0) {
+					multipleSpawningOffset.X += 20000.0f;
+				}
+				FString finalPath = FString(TEXT("/four_one_"));
+				finalPath.AppendInt(i);
+				FString selectedFile = defaultFilePath + finalPath + FString(TEXT(".xml")); //object destroyed when scope has been left so no need to remove filename added.
+				UE_LOG(LogTemp, Warning, TEXT("=============The added path is %s"), *(selectedFile));
+				//FString selectedFile = OutFilenames[i];
+				UfileParser fileParser(*selectedFile, multipleSpawningOffset); //Selected File from the file dialog
 
-			//Uncomment these lines if you do not want any debug UE_LOG statements
-			//GEngine->Exec(nullptr, TEXT("Log LogTemp off")); //comment (1/2) to see log messages
-			//GEngine->Exec(nullptr, TEXT("Log LogEngine off")); //comment (2/2) to see log messages
-
-			fileParser.loadxml();
-			UE_LOG(LogTemp, Warning, TEXT("Xml file parsed!"));
-		}
-		
+				//Uncomment these lines if you do not want any debug UE_LOG statements
+				//GEngine->Exec(nullptr, TEXT("Log LogTemp off")); //comment (1/2) to see log messages
+				//GEngine->Exec(nullptr, TEXT("Log LogEngine off")); //comment (2/2) to see log messages
+				fileParser.loadxml();
+			//}
+		}		
 	}
 }
 

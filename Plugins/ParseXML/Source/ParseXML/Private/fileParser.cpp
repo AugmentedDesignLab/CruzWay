@@ -10,12 +10,12 @@
 #include <memory>
 
 
-UfileParser::UfileParser(const TCHAR* selectedFile) : selectedXMLFile(selectedFile)
+UfileParser::UfileParser(const TCHAR* selectedFile, FVector& multipleSpawningOffsetVector) : selectedXMLFile(selectedFile), multipleSpawningOffset(multipleSpawningOffsetVector)
 {
 	FVector Location = FVector(0.0f, 0.0f, 2000.0f);
 	FRotator Rotation = FRotator(0.0f, 0.0f, 0.0f);
 	FActorSpawnParameters SpawnParameters;
-	getAllActorsOfClass();
+	//getAllActorsOfClass();
 	World->SpawnActor<AAtmosphericFog>(Location, Rotation, SpawnParameters);
 	Location.Z = 100000.0f;
 	/*
@@ -206,6 +206,7 @@ void UfileParser::MakeSpline() {
 	}
 
 	FQuat SplineRotation(0.0f, 0.0f, 0.0f, 0.0f);
+	SplineCentroid += multipleSpawningOffset;
 	FTransform SpawnTransform(SplineRotation, SplineCentroid);
 	AWayPoint* WayPointDeferred = Cast<AWayPoint>(UGameplayStatics::BeginDeferredActorSpawnFromClass(World, AWayPoint::StaticClass(), SpawnTransform));
 
@@ -333,6 +334,7 @@ void UfileParser::InitializewalkingArea() {
 
 	walkingAreaPtr movedWalkingAreaPointer = nullptr;
 
+	origin += multipleSpawningOffset;
 	FTransform SpawnTransform(RotationEdge, origin);
 	ARoadMesh* MyDeferredActor = Cast<ARoadMesh>(UGameplayStatics::BeginDeferredActorSpawnFromClass(World, ARoadMesh::StaticClass(), SpawnTransform)); //Downcasting
 
@@ -367,6 +369,7 @@ SimpleNodePtr UfileParser::InitializeNode() {
 	FQuat RotationEdge(0.0f, 0.0f, 0.0f, 0.0f);
 	FVector origin(Node->NodePosition.X, Node->NodePosition.Y, 0.0f);
 
+	origin += multipleSpawningOffset;
 	FTransform SpawnTransform(RotationEdge, origin);
 	ARoadMesh* MyDeferredActor = Cast<ARoadMesh>(UGameplayStatics::BeginDeferredActorSpawnFromClass(World, ARoadMesh::StaticClass(), SpawnTransform));
 
@@ -422,6 +425,7 @@ SimpleEdgePtr UfileParser::InitializePedestrianEdge() {
 		origin.Y = originCoordinates.Y;
 		origin.Z = 0.2f;
 		
+		origin += multipleSpawningOffset;
 		FTransform SpawnTransform(RotationEdge, origin);
 		ARoadMesh* MyDeferredActor = Cast<ARoadMesh>(UGameplayStatics::BeginDeferredActorSpawnFromClass(World, ARoadMesh::StaticClass(), SpawnTransform)); //Downcasting
 
@@ -439,6 +443,7 @@ SimpleEdgePtr UfileParser::InitializePedestrianEdge() {
 		originCurb1.Y = originCoordinatesCurb1.Y;
 		originCurb1.Z = 0.2f;
 
+		originCurb1 += multipleSpawningOffset;
 		FTransform SpawnTransformCurb1(RotationEdgeCurb1, originCurb1);
 		ARoadMesh* MyDeferredActor1 = Cast<ARoadMesh>(UGameplayStatics::BeginDeferredActorSpawnFromClass(World, ARoadMesh::StaticClass(), SpawnTransformCurb1)); //Downcasting
 
@@ -456,6 +461,7 @@ SimpleEdgePtr UfileParser::InitializePedestrianEdge() {
 		originCurb2.Y = originCoordinatesCurb2.Y;
 		originCurb2.Z = 0.2f;
 
+		originCurb2 += multipleSpawningOffset;
 		FTransform SpawnTransformCurb2(RotationEdgeCurb2, originCurb2);
 		ARoadMesh* MyDeferredActor2 = Cast<ARoadMesh>(UGameplayStatics::BeginDeferredActorSpawnFromClass(World, ARoadMesh::StaticClass(), SpawnTransformCurb2)); //Downcasting
 
@@ -517,6 +523,7 @@ SimpleEdgePtr UfileParser::InitializeEdge(const TCHAR* edgeType) {
 
 		splineOrigin = origin; //might break for curved edges.
 		splineRotation = RotationEdge;
+		splineOrigin += multipleSpawningOffset;
 		FTransform SpawnTransform(splineRotation, splineOrigin);
 		ARoadMesh* MyDeferredActor = Cast<ARoadMesh>(UGameplayStatics::BeginDeferredActorSpawnFromClass(World, ARoadMesh::StaticClass(), SpawnTransform)); //Downcasting
 		if (MyDeferredActor) {
@@ -561,7 +568,7 @@ SimpleEdgePtr UfileParser::InitializeEdge(const TCHAR* edgeType) {
 			AlaneMarking* decalSpawner = Cast<AlaneMarking>(UGameplayStatics::BeginDeferredActorSpawnFromClass(World, AlaneMarking::StaticClass(), SpawnTransform));
 			decalSpawner->directionVector = Spline->SplineActor->directionOfSpline;
 			decalSpawner->currentDecalSelection = Spline->SplineActor->calculateDecalSelection();
-			decalSpawner->Spawnlocation = origin;
+			decalSpawner->Spawnlocation = origin + multipleSpawningOffset;
 			decalSpawner->spawnPedestrianCrossingDecal();
 		}
 		i += 2;
@@ -591,6 +598,8 @@ void UfileParser::InitializeTrafficControl(const TCHAR* controlType)//spawn two 
 			currentWalkingAreaObject = pair.Value.get();
 			trafficControl1Location = currentWalkingAreaObject->trafficControlLocationCalculator();
 			trafficControlRotation = currentWalkingAreaObject->stopSignRotationCalculator();
+
+			trafficControl1Location += multipleSpawningOffset;
 			FTransform SpawnTransform(trafficControlRotation, trafficControl1Location, stopSignScale);
 			AStopSignMesh* MyDeferredStopSign = Cast<AStopSignMesh>(UGameplayStatics::BeginDeferredActorSpawnFromClass(World, AStopSignMesh::StaticClass(), SpawnTransform)); //Downcasting
 			UGameplayStatics::FinishSpawningActor(MyDeferredStopSign, SpawnTransform); //deferred actor spawning because it gives us the option to change scale of actor when needed. 
@@ -632,7 +641,7 @@ void UfileParser::LinkTrafficControlToSplines()
 				decalSpawner->currentDecalSelection = SplineContainer.SplineMap[incomingLaneContainer[g]]->SplineActor->calculateDecalSelection();
 				if (EdgeContainer.EdgeMap.Contains(incomingLaneContainer[g]))
 				{
-					decalSpawner->Spawnlocation = EdgeContainer.EdgeMap[incomingLaneContainer[g]]->centroid;
+					decalSpawner->Spawnlocation = EdgeContainer.EdgeMap[incomingLaneContainer[g]]->centroid + multipleSpawningOffset;
 					decalSpawner->spawnActor();
 				}
 			}
