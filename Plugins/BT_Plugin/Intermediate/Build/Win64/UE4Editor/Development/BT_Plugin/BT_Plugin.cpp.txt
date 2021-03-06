@@ -1,5 +1,0 @@
-C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Intermediate\Build\Win64\UE4Editor\Development\BT_Plugin\Definitions.BT_Plugin.h
-C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Source\BT_Plugin\Public\BT_Plugin.h
-C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Source\BT_Plugin\Public\BT_PluginEdMode.h
-C:\Program Files\Epic Games\UE_4.23\Engine\Source\Editor\UnrealEd\Public\EdMode.h
-c:\program files\epic games\ue_4.23\engine\source\editor\unrealed\public\EditorModeRegistry.h
