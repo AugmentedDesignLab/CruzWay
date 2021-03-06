@@ -67,7 +67,10 @@ void FParseXMLModule::PluginButtonClicked()
 
 	const FString& windowTitle = "Browse XML Files";
 	FString defaultFilePath = "C:/Users/iparanja/Documents/Unreal Projects/NewS2U/Sumo2Unreal_4.22/Road_Network_Files/road_intersections";
+<<<<<<< HEAD
 	std::string jsonFilePath = "C:/Users/iparanja/Documents/Unreal Projects/NewS2U/Sumo2Unreal_4.22/Content/Python/Data/";
+=======
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 	const FString& defaultFileName = "SumoToUnreal.cpp";
 	const FString& defaultFileType = "*.jpg";
 	FVector multipleSpawningOffset(0.0f, 0.0f, 0.0f);
@@ -82,6 +85,7 @@ void FParseXMLModule::PluginButtonClicked()
 	const TSharedPtr<SWindow>& MainFrameParentWindow = MainFrameModule.GetParentWindow();
 	if (MainFrameParentWindow.IsValid() && MainFrameParentWindow->GetNativeWindow().IsValid())
 	{
+<<<<<<< HEAD
 		ParentWindowWindowHandle = MainFrameParentWindow->GetNativeWindow()->GetOSWindowHandle();
 		/*Uncomment to create multiple intersections using search-based PCG
 		json output_json;
@@ -139,6 +143,32 @@ void FParseXMLModule::PluginButtonClicked()
 		}
 		//output << output_json << std::endl;
 		//GEngine->Exec(nullptr, TEXT("py \"run2.py\""));
+=======
+		//ParentWindowWindowHandle = MainFrameParentWindow->GetNativeWindow()->GetOSWindowHandle();
+		GEngine->Exec(nullptr, TEXT("py \"C:\\Users\\iparanja\\Documents\\Unreal Projects\\CruzWay\\Sumo2Unreal\\Source\\python\\test.py\""));
+		for (int i = 0; i < 3; i++) 
+		{
+			UE_LOG(LogTemp, Warning, TEXT("=============The FOR LOOP"));
+			//if (DesktopPlatform->OpenFileDialog(ParentWindowWindowHandle, windowTitle, defaultFilePath, defaultFileName,
+			//defaultFileType, 0x00, OutFilenames))
+			//{ 
+				if (i > 0) {
+					multipleSpawningOffset.X += 20000.0f;
+				}
+				FString finalPath = FString(TEXT("/four_one_"));
+				finalPath.AppendInt(i);
+				FString selectedFile = defaultFilePath + finalPath + FString(TEXT(".xml")); //object destroyed when scope has been left so no need to remove filename added.
+				UE_LOG(LogTemp, Warning, TEXT("=============The added path is %s"), *(selectedFile));
+				//FString selectedFile = OutFilenames[i];
+				UfileParser fileParser(*selectedFile, multipleSpawningOffset); //Selected File from the file dialog
+
+				//Uncomment these lines if you do not want any debug UE_LOG statements
+				//GEngine->Exec(nullptr, TEXT("Log LogTemp off")); //comment (1/2) to see log messages
+				//GEngine->Exec(nullptr, TEXT("Log LogEngine off")); //comment (2/2) to see log messages
+				fileParser.loadxml();
+			//}
+		}		
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 	}
 }
 

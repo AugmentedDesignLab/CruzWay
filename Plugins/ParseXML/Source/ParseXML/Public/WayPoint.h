@@ -49,7 +49,15 @@ public:
 
 	//New Code
 	UPROPERTY(EditAnywhere)
+<<<<<<< HEAD
 		FVector StopSignLocation;
+=======
+	bool isStopSignConnected = false;
+
+	//New Code
+	UPROPERTY(EditAnywhere)
+	FVector StopSignLocation;
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 
 	int32 twoTimesTotalConnectedSplines = 0; //multiple of 2
 	void calculateCurrentSplineTurnTypes();

@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
 	"BuildId": "14830424",
+=======
+	"BuildId": "8386587",
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 	"Modules": 
 	{
 		"BT_Plugin": "UE4Editor-BT_Plugin.dll"

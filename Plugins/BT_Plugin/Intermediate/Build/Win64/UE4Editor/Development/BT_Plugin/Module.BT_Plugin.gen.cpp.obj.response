@@ -12,10 +12,17 @@
 /D_DISABLE_EXTENDED_ALIGNED_STORAGE
 /source-charset:utf-8
 /execution-charset:utf-8
+<<<<<<< HEAD
 /Ob2
 /Ox
 /Ot
 /GF
+=======
+/Ox
+/Ot
+/GF
+/Ob2
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /errorReport:prompt
 /EHsc
 /Z7
@@ -25,15 +32,23 @@
 /Zo
 /Zp8
 /wd4463
+<<<<<<< HEAD
 /wd4244
 /wd4838
+=======
+/wd4838
+/we4668
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I .
 /I "C:\Users\iparanja\Documents\Unreal Projects\CruzWay\Sumo2Unreal\Plugins\BT_Plugin\Source\BT_Plugin\Private"
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\CoreUObject
 /I Runtime
 /I Runtime\CoreUObject\Public
 /I Runtime\CoreUObject
+<<<<<<< HEAD
 /I Runtime\CoreUObject\Public\AssetRegistry
+=======
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\CoreUObject\Public\Blueprint
 /I Runtime\CoreUObject\Public\Internationalization
 /I Runtime\CoreUObject\Public\Misc
@@ -41,13 +56,17 @@
 /I Runtime\CoreUObject\Public\Serialization\Formatters
 /I Runtime\CoreUObject\Public\Templates
 /I Runtime\CoreUObject\Public\UObject
+<<<<<<< HEAD
 /I Runtime\TraceLog\Public
+=======
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\Core\Public
 /I Runtime\Core
 /I Runtime\Core\Public\Algo
 /I Runtime\Core\Public\Algo\Impl
 /I Runtime\Core\Public\Async
 /I Runtime\Core\Public\Clang
+<<<<<<< HEAD
 /I Runtime\Core\Public\Compression
 /I Runtime\Core\Public\Concepts
 /I Runtime\Core\Public\Containers
@@ -56,35 +75,59 @@
 /I Runtime\Core\Public\Experimental\Containers
 /I Runtime\Core\Public\Features
 /I Runtime\Core\Public\FileCache
+=======
+/I Runtime\Core\Public\Concepts
+/I Runtime\Core\Public\Containers
+/I Runtime\Core\Public\Delegates
+/I Runtime\Core\Public\Features
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\Core\Public\FramePro
 /I Runtime\Core\Public\GenericPlatform
 /I Runtime\Core\Public\HAL
 /I Runtime\Core\Public\HAL\Allocators
 /I Runtime\Core\Public\Hash
 /I Runtime\Core\Public\Internationalization
+<<<<<<< HEAD
 /I Runtime\Core\Public\IO
 /I Runtime\Core\Public\Logging
 /I Runtime\Core\Public\Math
 /I Runtime\Core\Public\Memory
+=======
+/I Runtime\Core\Public\Logging
+/I Runtime\Core\Public\Math
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\Core\Public\MemPro
 /I Runtime\Core\Public\Misc
 /I Runtime\Core\Public\Modules
 /I Runtime\Core\Public\Modules\Boilerplate
+<<<<<<< HEAD
 /I Runtime\Core\Public\MSVC
+=======
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\Core\Public\ProfilingDebugging
 /I Runtime\Core\Public\Serialization
 /I Runtime\Core\Public\Serialization\Csv
 /I Runtime\Core\Public\Serialization\Formatters
 /I Runtime\Core\Public\Stats
+<<<<<<< HEAD
 /I Runtime\Core\Public\String
+=======
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\Core\Public\Templates
 /I Runtime\Core\Public\Traits
 /I Runtime\Core\Public\UObject
 /I Runtime\Core\Public\Windows
+<<<<<<< HEAD
 /I Runtime\TraceLog
 /I Runtime\TraceLog\Public\Trace
 /I Runtime\TraceLog\Public\Trace\Detail
 /I Runtime\TraceLog\Public\Trace\Detail\Protocols
+=======
+/I Runtime\TraceLog\Public
+/I Runtime\TraceLog
+/I Runtime\TraceLog\Public\Trace
+/I Runtime\TraceLog\Public\Trace\Private
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Engine
 /I Runtime\Engine\Classes
 /I Runtime\Engine\Public
@@ -94,10 +137,15 @@
 /I Runtime\Engine\Public\Analytics
 /I Runtime\Engine\Public\Animation
 /I Runtime\Engine\Public\Audio
+<<<<<<< HEAD
 /I Runtime\Engine\Public\Blueprint
 /I Runtime\Engine\Public\Curves
 /I Runtime\Engine\Public\EdGraph
 /I Runtime\Engine\Public\HLOD
+=======
+/I Runtime\Engine\Public\Curves
+/I Runtime\Engine\Public\EdGraph
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\Engine\Public\Internationalization
 /I Runtime\Engine\Public\Net
 /I Runtime\Engine\Public\Net\Util
@@ -106,6 +154,7 @@
 /I Runtime\Engine\Public\Physics
 /I Runtime\Engine\Public\Physics\Experimental
 /I Runtime\Engine\Public\Physics\ImmediatePhysics
+<<<<<<< HEAD
 /I Runtime\Engine\Public\Physics\ImmediatePhysics\ImmediatePhysicsChaos
 /I Runtime\Engine\Public\Physics\ImmediatePhysics\ImmediatePhysicsPhysX
 /I Runtime\Engine\Public\Physics\ImmediatePhysics\ImmediatePhysicsShared
@@ -114,10 +163,16 @@
 /I Runtime\Engine\Public\Rendering
 /I Runtime\Engine\Public\Slate
 /I Runtime\Engine\Public\Streaming
+=======
+/I Runtime\Engine\Public\ProfilingDebugging
+/I Runtime\Engine\Public\Rendering
+/I Runtime\Engine\Public\Slate
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\Engine\Public\Subsystems
 /I Runtime\Engine\Public\Tests
 /I Runtime\Engine\Public\VisualLogger
 /I Runtime\Engine\Public\VT
+<<<<<<< HEAD
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\NetCore
 /I Runtime\Net
 /I Runtime\Net\Core\Classes
@@ -134,12 +189,20 @@
 /I Runtime\ApplicationCore
 /I Runtime\ApplicationCore\Public\GenericPlatform
 /I Runtime\ApplicationCore\Public\GenericPlatform\Accessibility
+=======
+/I Runtime\ApplicationCore\Public
+/I Runtime\ApplicationCore
+/I Runtime\ApplicationCore\Public\GenericPlatform
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\ApplicationCore\Public\HAL
 /I Runtime\ApplicationCore\Public\Windows
 /I Runtime\ApplicationCore\Public\Windows\Accessibility
 /I Runtime\RHI\Public
 /I Runtime\RHI
+<<<<<<< HEAD
 /I Runtime\RHI\Public\Tests
+=======
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\Json\Public
 /I Runtime\Json
 /I Runtime\Json\Public\Dom
@@ -152,7 +215,10 @@
 /I Runtime\SlateCore\Public\Application
 /I Runtime\SlateCore\Public\Brushes
 /I Runtime\SlateCore\Public\Debugging
+<<<<<<< HEAD
 /I Runtime\SlateCore\Public\FastUpdate
+=======
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\SlateCore\Public\Fonts
 /I Runtime\SlateCore\Public\Input
 /I Runtime\SlateCore\Public\Layout
@@ -160,7 +226,10 @@
 /I Runtime\SlateCore\Public\Sound
 /I Runtime\SlateCore\Public\Styling
 /I Runtime\SlateCore\Public\Textures
+<<<<<<< HEAD
 /I Runtime\SlateCore\Public\Trace
+=======
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\SlateCore\Public\Types
 /I Runtime\SlateCore\Public\Widgets
 /I Runtime\SlateCore\Public\Widgets\Accessibility
@@ -185,7 +254,10 @@
 /I Runtime\Slate\Public\Framework\Notifications
 /I Runtime\Slate\Public\Framework\Styling
 /I Runtime\Slate\Public\Framework\Text
+<<<<<<< HEAD
 /I Runtime\Slate\Public\Framework\Text\Windows
+=======
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\Slate\Public\Framework\Views
 /I Runtime\Slate\Public\Widgets
 /I Runtime\Slate\Public\Widgets\Accessibility
@@ -209,6 +281,7 @@
 /I Runtime\RenderCore\Public
 /I Runtime\RenderCore
 /I Runtime\RenderCore\Public\ProfilingDebugging
+<<<<<<< HEAD
 /I Runtime\Analytics
 /I Runtime\Analytics\AnalyticsET\Public
 /I Runtime\Analytics\AnalyticsET
@@ -227,6 +300,15 @@
 /I Runtime\AssetRegistry\Public
 /I Runtime\AssetRegistry
 /I Runtime\AssetRegistry\Public\AssetRegistry
+=======
+/I Runtime\Sockets\Public
+/I Runtime\Sockets
+/I Runtime\UtilityShaders\Public
+/I Runtime\UtilityShaders
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\AssetRegistry
+/I Runtime\AssetRegistry\Public
+/I Runtime\AssetRegistry
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\EngineMessages
 /I Runtime\EngineMessages\Public
 /I Runtime\EngineMessages
@@ -239,7 +321,10 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\Renderer
 /I Runtime\Renderer\Public
 /I Runtime\Renderer
+<<<<<<< HEAD
 /I Runtime\Renderer\Public\VT
+=======
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\GameplayTags
 /I Runtime\GameplayTags\Classes
 /I Runtime\GameplayTags\Public
@@ -257,9 +342,12 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MeshDescription
 /I Runtime\MeshDescription\Public
 /I Runtime\MeshDescription
+<<<<<<< HEAD
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\StaticMeshDescription
 /I Runtime\StaticMeshDescription\Public
 /I Runtime\StaticMeshDescription
+=======
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\PakFile\Public
 /I Runtime\PakFile
 /I Runtime\RSA\Public
@@ -270,6 +358,7 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\PhysicsCore
 /I Runtime\PhysicsCore\Public
 /I Runtime\PhysicsCore
+<<<<<<< HEAD
 /I Runtime\PhysicsCore\Public\Chaos
 /I Runtime\PhysicsCore\Public\PhysicalMaterials
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\DeveloperSettings
@@ -311,6 +400,40 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\PropertyAccess
 /I Runtime\PropertyAccess\Public
 /I Runtime\PropertyAccess
+=======
+/I ThirdParty
+/I Runtime\PhysicsSQ\Public
+/I Runtime\PhysicsSQ
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\ChaosSolvers
+/I Runtime\Experimental
+/I Runtime\Experimental\ChaosSolvers\Public
+/I Runtime\Experimental\ChaosSolvers
+/I Runtime\Experimental\ChaosSolvers\Public\Framework
+/I Runtime\Experimental\ChaosSolvers\Public\SolverObjects
+/I Runtime\Experimental\Chaos\Public
+/I Runtime\Experimental\Chaos
+/I Runtime\Experimental\Chaos\Public\Chaos
+/I Runtime\Experimental\Chaos\Public\Chaos\Framework
+/I Runtime\Experimental\ChaosCore\Public
+/I Runtime\Experimental\ChaosCore
+/I Runtime\Experimental\ChaosCore\Public\Chaos
+/I Runtime\Experimental\Voronoi\Public
+/I Runtime\Experimental\Voronoi
+/I Runtime\Experimental\Voronoi\Public\Voronoi
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\FieldSystemCore
+/I Runtime\Experimental\FieldSystem\Source
+/I Runtime\Experimental\FieldSystem\Source\FieldSystemCore\Public
+/I Runtime\Experimental\FieldSystem\Source\FieldSystemCore
+/I Runtime\Experimental\FieldSystem\Source\FieldSystemCore\Public\Field
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\GeometryCollectionCore
+/I Runtime\Experimental\GeometryCollectionCore\Public
+/I Runtime\Experimental\GeometryCollectionCore
+/I Runtime\Experimental\GeometryCollectionCore\Public\GeometryCollection
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\GeometryCollectionSimulationCore
+/I Runtime\Experimental\GeometryCollectionSimulationCore\Public
+/I Runtime\Experimental\GeometryCollectionSimulationCore
+/I Runtime\Experimental\GeometryCollectionSimulationCore\Public\GeometryCollection
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\UnrealEd
 /I Editor
 /I Programs\UnrealLightmass\Public
@@ -330,7 +453,12 @@
 /I Editor\UnrealEd\Public\Subsystems
 /I Editor\UnrealEd\Public\Tests
 /I Editor\UnrealEd\Public\Toolkits
+<<<<<<< HEAD
 /I Editor\UnrealEd\Public\Tools
+=======
+/I Editor\BspMode\Public
+/I Editor\BspMode
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Developer
 /I Developer\DirectoryWatcher\Public
 /I Developer\DirectoryWatcher
@@ -393,13 +521,23 @@
 /I Runtime\AudioMixer\Public
 /I Runtime\AudioMixer
 /I Runtime\AudioMixer\Public\Components
+<<<<<<< HEAD
 /I Runtime\AudioMixer\Public\Quartz
+=======
+/I Runtime\AudioMixer\Public\DSP
+/I Runtime\AudioMixer\Public\DSP\Encoders
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\AudioMixer\Public\SoundFileIO
 /I Developer\TargetPlatform\Public
 /I Developer\TargetPlatform
 /I Developer\TargetPlatform\Public\Common
 /I Developer\TargetPlatform\Public\Interfaces
+<<<<<<< HEAD
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\LevelEditor
+=======
+/I ThirdParty\libSampleRate\Public
+/I ThirdParty\libSampleRate
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Editor\LevelEditor\Public
 /I Editor\LevelEditor
 /I Developer\Settings\Public
@@ -445,6 +583,7 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ContentBrowser
 /I Editor\ContentBrowser\Public
 /I Editor\ContentBrowser
+<<<<<<< HEAD
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ContentBrowserData
 /I Editor\ContentBrowserData\Public
 /I Editor\ContentBrowserData
@@ -452,6 +591,8 @@
 /I Developer\CollectionManager
 /I ThirdParty\libSampleRate\Public
 /I ThirdParty\libSampleRate
+=======
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\NetworkFileSystem\Public
 /I Runtime\NetworkFileSystem
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\UMG
@@ -468,8 +609,11 @@
 /I Runtime\MovieScene
 /I Runtime\MovieScene\Public\Channels
 /I Runtime\MovieScene\Public\Compilation
+<<<<<<< HEAD
 /I Runtime\MovieScene\Public\EntitySystem
 /I Runtime\MovieScene\Public\EntitySystem\TrackInstance
+=======
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\MovieScene\Public\Evaluation
 /I Runtime\MovieScene\Public\Evaluation\Blending
 /I Runtime\MovieScene\Public\Generators
@@ -483,11 +627,16 @@
 /I Runtime\MovieSceneTracks\Public
 /I Runtime\MovieSceneTracks
 /I Runtime\MovieSceneTracks\Public\Channels
+<<<<<<< HEAD
 /I Runtime\MovieSceneTracks\Public\EntitySystem
 /I Runtime\MovieSceneTracks\Public\EntitySystem\Interrogation
 /I Runtime\MovieSceneTracks\Public\Evaluation
 /I Runtime\MovieSceneTracks\Public\Sections
 /I Runtime\MovieSceneTracks\Public\Systems
+=======
+/I Runtime\MovieSceneTracks\Public\Evaluation
+/I Runtime\MovieSceneTracks\Public\Sections
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\MovieSceneTracks\Public\Tracks
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AnimationCore
 /I Runtime\AnimationCore\Public
@@ -502,11 +651,33 @@
 /I Runtime\NavigationSystem\Public\NavFilters
 /I Runtime\NavigationSystem\Public\NavGraph
 /I Runtime\NavigationSystem\Public\NavMesh
+<<<<<<< HEAD
+=======
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\GeometryCollectionEngine
+/I Runtime\Experimental\GeometryCollectionEngine\Public
+/I Runtime\Experimental\GeometryCollectionEngine
+/I Runtime\Experimental\GeometryCollectionEngine\Public\GeometryCollection
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\FieldSystemEngine
+/I Runtime\Experimental\FieldSystem\Source\FieldSystemEngine\Public
+/I Runtime\Experimental\FieldSystem\Source\FieldSystemEngine
+/I Runtime\Experimental\FieldSystem\Source\FieldSystemEngine\Public\Field
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\ChaosSolverEngine
+/I Runtime\Experimental\ChaosSolverEngine\Public
+/I Runtime\Experimental\ChaosSolverEngine
+/I Runtime\Experimental\ChaosSolverEngine\Public\Chaos
+/I Runtime\Experimental\FieldSystem\Source\FieldSystemSimulationCore\Public
+/I Runtime\Experimental\FieldSystem\Source\FieldSystemSimulationCore
+/I Runtime\Experimental\FieldSystem\Source\FieldSystemSimulationCore\Public\Field
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\MeshDescriptionOperations
+/I Developer\MeshDescriptionOperations\Public
+/I Developer\MeshDescriptionOperations
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Developer\MeshBuilder\Public
 /I Developer\MeshBuilder
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MaterialShaderQualitySettings
 /I Runtime\MaterialShaderQualitySettings\Classes
 /I Runtime\MaterialShaderQualitySettings
+<<<<<<< HEAD
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\InteractiveToolsFramework
 /I Runtime\Experimental\InteractiveToolsFramework\Public
 /I Runtime\Experimental\InteractiveToolsFramework
@@ -520,16 +691,27 @@
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ToolMenus
 /I Developer\ToolMenus\Public
 /I Developer\ToolMenus
+=======
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Runtime\Windows
 /I Runtime\Windows\XAudio2\Public
 /I Runtime\Windows\XAudio2
 /I Runtime\Windows\AudioMixerXAudio2
+<<<<<<< HEAD
 /I Editor\AssetTagsEditor\Public
 /I Editor\AssetTagsEditor
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AddContentDialog
 /I Editor\AddContentDialog\Public
 /I Editor\AddContentDialog
 /I ThirdParty\Intel\Embree\Embree2140\Win64\include
+=======
+/I Developer\CollectionManager\Public
+/I Developer\CollectionManager
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\AddContentDialog
+/I Editor\AddContentDialog\Public
+/I Editor\AddContentDialog
+/I ThirdParty\IntelEmbree\Embree2140\Win64\include
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Developer\MeshUtilities\Public
 /I Developer\MeshUtilities
 /I Developer\MeshMergeUtilities\Public
@@ -556,6 +738,10 @@
 /I Editor\Kismet\Classes
 /I Editor\Kismet\Public
 /I Editor\Kismet
+<<<<<<< HEAD
+=======
+/I Editor\Kismet\Public\Nodes
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I Editor\Kismet\Public\WorkflowOrientedApp
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\ClothingSystemRuntimeInterface
 /I Runtime\ClothingSystemRuntimeInterface\Public
@@ -610,8 +796,13 @@
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\RenderDebug\public
 /I ThirdParty\PhysX3\APEX_1.4\shared\general\PairFilter\include
 /I ThirdParty\PhysX3\APEX_1.4\shared\internal\include
+<<<<<<< HEAD
 /I "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.28.29333\INCLUDE"
 /I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.8\include\um"
+=======
+/I "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.16.27023\INCLUDE"
+/I "C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"

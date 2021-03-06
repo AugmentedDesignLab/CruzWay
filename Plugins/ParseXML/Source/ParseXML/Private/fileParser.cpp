@@ -447,7 +447,11 @@ SimpleEdgePtr UfileParser::InitializePedestrianEdge() {
 		origin.X = originCoordinates.X;
 		origin.Y = originCoordinates.Y;
 		origin.Z = 0.2f;
+<<<<<<< HEAD
 
+=======
+		
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 		origin += multipleSpawningOffset;
 		FTransform SpawnTransform(RotationEdge, origin);
 		ARoadMesh* MyDeferredActor = Cast<ARoadMesh>(UGameplayStatics::BeginDeferredActorSpawnFromClass(World, ARoadMesh::StaticClass(), SpawnTransform)); //Downcasting
