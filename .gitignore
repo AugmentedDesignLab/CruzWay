@@ -14,9 +14,12 @@ Content/Developers
 Content/trafficlight
 Content/trial_trafficLight
 Content/VehicleModel
+Content/VehicleVarietyPack
 Content/*.uasset
 Content/*.umap
-Content/VehicleVarietyPack
+newTests
+Road_Network_Files
+S2U_Screenshots
 
 
 #Plugin specific files
@@ -24,6 +27,9 @@ Plugins/ParseXML/Binaries/*
 Plugins/ParseXML/Intermediate/*
 Plugins/SpawnPedestrian/Binaries/*
 Plugins/SpawnPedestrian/Intermediate/*
+Plugins/BT_Plugin/Binaries/*
+Plugins/BT_Plugin/Intermediate/*
+Plugins/BT_Plugin/Content/VehicleModel
 
 
 # User-specific files

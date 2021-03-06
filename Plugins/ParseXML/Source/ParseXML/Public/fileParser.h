@@ -16,6 +16,10 @@ class UfileParser : public IFastXmlCallback
 {
 public:
 	UfileParser(const TCHAR*, FVector&);
+<<<<<<< HEAD
+	UfileParser(const TCHAR*);
+=======
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 	virtual ~UfileParser();
 
 	//before starting any parsing.
@@ -31,7 +35,11 @@ public:
 
 	//Offset for all spawning coordinates used. Used in case of multiple road networks being spawned.
 	FVector multipleSpawningOffset;
+<<<<<<< HEAD
+
+=======
 	
+>>>>>>> cf15187e4f22eb9283c2ec1c5dc1c0fd3121a4fd
 	//Spline Container
 	splineCont SplineContainer;
 	FString turnType = "";
