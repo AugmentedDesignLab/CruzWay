@@ -6,7 +6,7 @@
 // Sets default values
 AWayPoint::AWayPoint()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 	SplineComponent = CreateDefaultSubobject<USplineComponent>("SplineObject");
@@ -17,6 +17,7 @@ AWayPoint::AWayPoint()
 void AWayPoint::BeginPlay()
 {
 	Super::BeginPlay();
+	SplineComponent->bDrawDebug = true;
 	TotalDistance = SplineComponent->GetSplineLength();
 }
 
@@ -55,5 +56,15 @@ FString AWayPoint::calculateDecalSelection()
 		FString temp = "";
 		return temp;
 	}
+}
+
+float AWayPoint::GetDistanceAlongSpline(FVector WorldLocation)
+{
+	auto InputKeyFloat = SplineComponent->FindInputKeyClosestToWorldLocation(WorldLocation);
+	auto InputKey = FMath::TruncToInt(InputKeyFloat);
+	auto A = SplineComponent->GetDistanceAlongSplineAtSplinePoint(InputKey);
+	auto B = SplineComponent->GetDistanceAlongSplineAtSplinePoint(InputKey + 1);
+
+	return A + ((B - A) * (InputKeyFloat - InputKey));
 }
 

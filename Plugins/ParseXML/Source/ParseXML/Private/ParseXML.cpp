@@ -8,9 +8,12 @@
 #include "Developer/DesktopPlatform/Public/DesktopPlatformModule.h"
 #include "Editor/MainFrame/Public/Interfaces/IMainFrameModule.h"
 #include "fileParser.h"
-
+#include "calcForkingPoints.h"
+#include <nlohmann/json.hpp>
+#include <fstream>
 #include "LevelEditor.h"
 
+using json = nlohmann::json;
 static const FName ParseXMLTabName("Sumo2Unreal");
 
 #define LOCTEXT_NAMESPACE "FParseXMLModule"
@@ -63,9 +66,11 @@ void FParseXMLModule::PluginButtonClicked()
 	// Put your "OnButtonClicked" stuff here
 
 	const FString& windowTitle = "Browse XML Files";
-	const FString& defaultFilePath = "C:/Users";
+	FString defaultFilePath = "C:/Users/iparanja/Documents/Unreal Projects/NewS2U/Sumo2Unreal_4.22/Road_Network_Files/road_intersections";
+	std::string jsonFilePath = "C:/Users/iparanja/Documents/Unreal Projects/NewS2U/Sumo2Unreal_4.22/Content/Python/Data/";
 	const FString& defaultFileName = "SumoToUnreal.cpp";
 	const FString& defaultFileType = "*.jpg";
+	FVector multipleSpawningOffset(0.0f, 0.0f, 0.0f);
 
 	TArray <FString> originalOutFileNames = {};
 	TArray <FString>& OutFilenames = originalOutFileNames;
@@ -78,22 +83,65 @@ void FParseXMLModule::PluginButtonClicked()
 	if (MainFrameParentWindow.IsValid() && MainFrameParentWindow->GetNativeWindow().IsValid())
 	{
 		ParentWindowWindowHandle = MainFrameParentWindow->GetNativeWindow()->GetOSWindowHandle();
+		/*Uncomment to create multiple intersections using search-based PCG
+		json output_json;
+		std::ofstream output(jsonFilePath + "intersectionScores.json");
+		GEngine->Exec(nullptr, TEXT("py \"run.py\""));
+		for (int i = 0; i < 3; i++)
+		{
+		*/
+
+		
 		if (DesktopPlatform->OpenFileDialog(ParentWindowWindowHandle, windowTitle, defaultFilePath, defaultFileName,
 			defaultFileType, 0x00, OutFilenames))
-		{
-			FString selectedFile = FString(OutFilenames[0]);
-			UfileParser fileParser(*selectedFile); //Selected File from the file dialog
+		{		
+			/*
+			if (i > 0) {
+				multipleSpawningOffset.X += 20000.0f;
+			} else {
+				multipleSpawningOffset.X += 0.0f;
+			}
+			FString finalPath = FString(TEXT("/four_one_"));
+			finalPath.AppendInt(i);
+			FString selectedFile = defaultFilePath + finalPath + FString(TEXT(".xml")); //object destroyed when scope has been left so no need to remove filename added.
+			*/
 
-			//Uncomment these lines if you do not want any debug UE_LOG statements
-			//GEngine->Exec(nullptr, TEXT("Log LogTemp off")); //comment (1/2) to see log messages
-			//GEngine->Exec(nullptr, TEXT("Log LogEngine off")); //comment (2/2) to see log messages
-
+            
+			FString selectedFile = OutFilenames[0];
+			UfileParser fileParser(*selectedFile);
 			fileParser.loadxml();
-			UE_LOG(LogTemp, Warning, TEXT("Xml file parsed!"));
+			
+			/*
+			Uncomment these lines if you do not want any debug UE_LOG statements
+			GEngine->Exec(nullptr, TEXT("Log LogTemp off")); //comment (1/2) to see log messages
+			GEngine->Exec(nullptr, TEXT("Log LogEngine off")); //comment (2/2) to see log messages
+			*/
+
+			/*
+			UE_LOG(LogTemp, Warning, TEXT("==================== Parsing file %s ==========================="), *(selectedFile));
+			UfileParser fileParser(*selectedFile, multipleSpawningOffset);
+			UfileParser* intersectionPointer = &fileParser;
+			fileParser.loadxml();
+			calcForkingPoints forkingPoints(intersectionPointer);
+			int32 numberOfForkingPoints = forkingPoints.calculateForkingPointsCount(&(intersectionPointer->SplineContainer));
+			UE_LOG(LogTemp, Warning, TEXT("====================Forking points are %d"), numberOfForkingPoints);
+			*/
+			/*
+			Log the output scores of the road intersection to a json file. 
+			*/
+			//output_json["intersection"+std::to_string(i)]["forking_points"] = numberOfForkingPoints;
+			/*
+			UE_LOG(LogTemp, Warning, TEXT("========================On Screen Debug message display is %d"), GEngine->bEnableOnScreenDebugMessagesDisplay);
+			UE_LOG(LogTemp, Warning, TEXT("========================On Screen Debug message display is %d"), GEngine->bEnableOnScreenDebugMessages);
+			GEngine->AddOnScreenDebugMessage(0, 15.0f, FColor::Red, FString::Printf(TEXT("Intersection number %d"), i));
+			GEngine->AddOnScreenDebugMessage(0, 15.0f, FColor::Red, FString::Printf(TEXT("Number of Forking points %d"), numberOfForkingPoints));
+			*/
 		}
-		
+		//output << output_json << std::endl;
+		//GEngine->Exec(nullptr, TEXT("py \"run2.py\""));
 	}
 }
+
 
 void FParseXMLModule::AddMenuExtension(FMenuBuilder& Builder)
 {

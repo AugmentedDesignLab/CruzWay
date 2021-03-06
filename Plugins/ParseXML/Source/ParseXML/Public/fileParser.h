@@ -15,6 +15,7 @@
 class UfileParser : public IFastXmlCallback
 {
 public:
+	UfileParser(const TCHAR*, FVector&);
 	UfileParser(const TCHAR*);
 	virtual ~UfileParser();
 
@@ -28,6 +29,9 @@ public:
 	bool ProcessClose(const TCHAR* Element);
 	bool ProcessComment(const TCHAR* Comment);
 	bool loadxml();
+
+	//Offset for all spawning coordinates used. Used in case of multiple road networks being spawned.
+	FVector multipleSpawningOffset;
 
 	//Spline Container
 	splineCont SplineContainer;

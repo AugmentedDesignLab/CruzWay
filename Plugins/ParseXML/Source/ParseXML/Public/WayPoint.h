@@ -10,8 +10,8 @@ UCLASS()
 class PARSEXML_API AWayPoint : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	AWayPoint();
 
@@ -19,36 +19,42 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
 	UPROPERTY(EditAnywhere)
-	USplineComponent *SplineComponent;
+		USplineComponent* SplineComponent;
 	UPROPERTY(EditAnywhere)
-	FString splineID;
+		FString splineID;
 	UPROPERTY(EditAnywhere)
-	TArray<AWayPoint*> ConnectedSpline;
+		TArray<AWayPoint*> ConnectedSpline;
 	UPROPERTY(EditAnywhere)
-	TArray<AWayPoint*> CutSpline;
+		TArray<AWayPoint*> CutSpline;
 	UPROPERTY(EditAnywhere)
-	TArray<APawn*> VehiclePawnList;
+		TArray<APawn*> VehiclePawnList;
 
 	UPROPERTY(EditAnywhere)
-	FString turnType;
+		FString turnType;
 	FVector directionOfSpline;
 
 	//UPROPERTY(EditAnywhere)
 	//TMap<FString, AWayPoint*> ConnectedSplineMap;
 	UPROPERTY(EditAnywhere)
-	float TotalDistance = 0.0;
+		float TotalDistance = 0.0;
 	UPROPERTY(EditAnywhere)
-	int SpeedLimit = 0;
+		int SpeedLimit = 0;
 	UPROPERTY(EditAnywhere)
-	bool isStopSignConnected = false;
+		bool isStopSignConnected = false;
+
+	//New Code
+	UPROPERTY(EditAnywhere)
+		FVector StopSignLocation;
+
 	int32 twoTimesTotalConnectedSplines = 0; //multiple of 2
 	void calculateCurrentSplineTurnTypes();
 	FString calculateDecalSelection();
+	float GetDistanceAlongSpline(FVector WorldLocation);
 };
 
 
